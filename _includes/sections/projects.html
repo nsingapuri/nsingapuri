@@ -2,43 +2,60 @@
     <div class="row m-b-lg">
         <div class="col-lg-12 text-center">
             <div class="navy-line"></div>
-            <h1><span data-i18n="projects.my_projects">My Projects</span></h1>
+            <h1><span data-i18n="projects.my_projects">Case Studies</span></h1>
         </div>
     </div>
-    <div class="row">
-        {% for project in site.data.index.projects %}
-            {% assign loopindex = forloop.index | modulo: 2 %}
-            {% if forloop.last %}
-                {% if forloop.last == forloop.first %}
-            <div class="col-sm-6 wow col-sm-offset-3 zoomIn">
-                {% else %}
-            <div class="col-sm-6 wow {% if loopindex == 1 %} fadeInLeft col-sm-offset-3 {% else %} fadeInRight {% endif %}">
-                {% endif %}
-            {% else %}
-            <div class="col-sm-6 wow {% if loopindex == 1 %} fadeInLeft {% else %} fadeInRight {% endif %}">
+    {% assign casestudies = site.casestudies | sort: "weight" %}
+    {% for project in casestudies %}
+        <div class="row align-middle" style="margin-top: 2em;">
+        {% assign loopindex = forloop.index | plus: 0 %}
+        {% if forloop.index >= 4 %}
+            {% break %}
+        {% endif %}
+        {% assign loopindex = forloop.index | modulo: 2 %}
+            {% if loopindex == 1 %}
+            <div class="col-sm-6 wow text-center {% if loopindex == 1 %} fadeInLeft {% else %} fadeInRight {% endif %}">
+                <a href="{{ project.url | relative_url }}">
+                    <img src="{{ project.img | prepend: site.baseurl }}" class="img-responsive" alt="{{ project.name }}"><br/>
+                </a>
+            </div>
+
             {% endif %}
-              <div class="team-member">
-                  <img src="{{ project.img | prepend: site.baseurl }}" class="img-responsive img-circle img-small" alt="">
-                  <h4>
-                  {% if project.url %}
-                  <a href="{{ project.url }}" target="_blank"><span class="navy">{{ project.name }}</span></a>
-                  {% elsif project.repo %}
-                  <a href="https://github.com/{{ project.gh_user }}/{{ project.repo }}" target="_blank"><span class="navy">{{ project.name }}</span></a>
-                  {% else %}
-                  <span class="navy">{{ project.name }}</span>
-                  {% endif %}
-                  </h4>
-                  <p><span data-i18n="projects.{{ project.i18n }}">{{ project.desc }}</span></p>
-                  {% if project.repo %}
-                  <div user="{{ project.gh_user }}" repo="{{ project.repo }}" class="ghbtn">
-                      <a target="_blank" style="width: 65px;" href="https://github.com/{{ project.gh_user }}/{{ project.repo }}/stargazers" class="btn btn-white btn-xs star"><i class="fa fa-star"></i> ...</a>&emsp;&emsp;
-                      <a target="_blank" style="width: 65px;" href="https://github.com/{{ project.gh_user }}/{{ project.repo }}/network" class="btn btn-white btn-xs fork"><i class="fa fa-code-fork"></i> ...</a>
-                      <div style="height: 10px;"></div>
-                  </div>
-                  {% endif %}
-              </div>
+
+            <div class="col-sm-6 team-member">
+                <div>
+                    {% capture projectLink %}
+                        <a href="{{ project.url | relative_url }}">
+                            {{ project.name }}
+                        </a>
+                    {% endcapture %}
+
+                    <h3>Type: {{ project.type }} / {{ project.domain }}</h3>
+                    <h2 class="d-flex align-self-center" style="font-size: 261%; margin-top: 1em;">{{ project.headline | replace: project.name, projectLink }}</h2>
+                </div>
+              <h2 style="margin-top: 3em;">At a Glance</h2>
+              <div style="font-size: 16px;">
+              <p>
+                {% for role in project.ataglance %}
+                  {{ role.heading }} <strong>{{ role.detail }}</strong><br/>
+                {% endfor %}
+              </p>
+              <br/>
+              <br/>
           </div>
-      {% endfor %}
+            </div>
+
+            {% if loopindex == 0 %}
+            <div class="col-sm-6 wow text-center {% if loopindex == 1 %} fadeInLeft {% else %} fadeInRight {% endif %}">
+                <a href="{{ project.url | relative_url }}">{{ team.title }}
+                    <img src="{{ project.img | prepend: site.baseurl }}" class="img-responsive" alt="{{ project.name }}"><br/>
+                    {{ project.name }}
+                </a>
+            </div>
+            {% endif %}
+
+            <br style="clear: both; padding-bottom: 2em;"><br/>
     </div>
+      {% endfor %}
 </div>
 <br>

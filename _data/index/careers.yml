@@ -1,30 +1,154 @@
 # careers section data
 # if you don't have language feature(language.yml is empty), ignore "i18n" items
-- name:
-    detail: Company A
-    i18n: company_a
-  desc:
-    detail: I worked at Company A ...
-    i18n: company_a_desc
-  date:
-    detail: Apr. 2016
-    i18n: company_a_date
-  job:
-    detail: CTO
-    i18n: company_a_job
-  icon: fa-plus-square
-  present: true
 
-- name:
-    detail: Company B
-    i18n: company_b
-  desc:
-    detail: I worked at Company B ...
-    i18n: company_b_desc
-  date:
-    detail: Jun. 2015
-    i18n: company_b_date
-  job:
-    detail: Full Stack Developer
-    i18n: company_b_job
+- experience:
   icon: fa-plus-square
+  align: left
+  employer:
+    name: Self-Employed
+    address:
+      street: 7113 San Pedro Ave.
+      city: San Antonio
+      state: TX
+      zip: '75216'
+  employmentDate:
+    startDate: '2019'
+  jobDescription:
+    title: Self-Empolyed
+    summary: Started some companies. Built some websites. Grew some plants. Told others how to do some subset of these things. 
+  img:  /static/assets/img/landing/mopt.jpeg
+  title: "My \"Mayor of PlantyTown\" Era"
+
+- experience:
+  icon: fa-sign-hanging
+  align: left
+  employer:
+    name: RealPage Inc.
+    address:
+      street: 7113 San Pedro Ave.
+      city: San Antonio
+      state: TX
+      zip: '75216'
+  employmentDate:
+    startDate: '2016'
+    endDate: '2019'
+  jobDescription:
+    title: Sr. Manager Software Engineering - Active Building
+    summary: Ran a small org of about 15 developers focused on Active Building (renter service and payment portal) product, mobile offerings, package kiosk and an assortment of other renter facing product offerings.
+  img:  /static/assets/img/landing/realpage.jpeg
+  title: "are we having fun yet?"
+
+- experience:
+  icon: fa-plus-square
+  align: left
+  employer:
+    name: IBM
+    address:
+      street: 7113 San Pedro Ave.
+      city: San Antonio
+      state: TX
+      zip: '75216'
+  employmentDate:
+    startDate: '2014'
+    endDate: '2016'
+  jobDescription:
+    title: "Lead Software Engineering: Compute - Inventory / Operations"
+    summary: Ran a team of 8 engineers charged with automating hardware and components for IBM's cloud. Helped launch ~20 datacenters.
+  img:  /static/assets/img/landing/ibm.png
+  title: "cube pranks vol. 4"
+
+
+- experience:
+  icon: fa-plus-square
+  align: left
+  employer:
+    name: SoftLayer
+    address:
+      street: 7113 San Pedro Ave.
+      city: San Antonio
+      state: TX
+      zip: '75216'
+  employmentDate:
+    startDate: '2011'
+    endDate: '2014'
+  jobDescription:
+    title: "Software Engineer III"
+    summary: Kinda the same as IBM (they aquired us) but with a more reasonable cadence for DC launches.
+  img:  /static/assets/img/landing/softlayer.png
+  title: "...this tracks"
+
+- experience:
+  icon: fa-plus-square
+  align: left
+  employer:
+    name: Speed Commerce
+    address:
+      street: 7113 San Pedro Ave.
+      city: San Antonio
+      state: TX
+      zip: '75216'
+  employmentDate:
+    startDate: '2008'
+    endDate: '2011'
+  jobDescription:
+    title: "Sr. Developer"
+    summary: Warehouseing solution for large brands. I owned the development bits of onboarding and data integrations.
+  img:  /static/assets/img/landing/sfc.jpg
+  title: "...this also tracks"
+
+- experience:
+  icon: fa-plus-square
+  align: left
+  employer:
+    name: Next Prodigy Inc.
+    address:
+      street: 7113 San Pedro Ave.
+      city: San Antonio
+      state: TX
+      zip: '75216'
+  employmentDate:
+    startDate: '2006'
+    endDate: '2008'
+  jobDescription:
+    title: CoFounder
+    summary: Real estate search engine similar in concept to Zillow or Trulia. We raided over 1m in invesor funding and built an impressive MVP in a crashing real estate market.
+  img:  /static/assets/img/landing/nextprodigy.png
+  title: "team building"
+
+- experience:
+  icon: fa-plus-square
+  align: left
+  employer:
+    name: Native Sun Communications
+    address:
+      street: 7113 San Pedro Ave.
+      city: San Antonio
+      state: TX
+      zip: '75216'
+  employmentDate:
+    startDate: '2002'
+    endDate: '2006'
+  jobDescription:
+    title: Internet Technology Manager
+    summary: B2B Communications Provider. I ran the website and marketing as well as some tech support/helpdesk type tasks.
+  img:  /static/assets/img/landing/nativesun.jpg
+  title: "work doesn't feel like work, when you are having fun"
+
+- experience:
+  icon: fa-school
+  align: left
+  employer:
+    name: University of Denver
+    address:
+      street: 7113 San Pedro Ave.
+      city: San Antonio
+      state: TX
+      zip: '75216'
+  employmentDate:
+    startDate: '1998'
+    endDate: '2002'
+  jobDescription:
+    title: BS Computer Science. AS Mathematics. AFA Fine Arts.
+    summary: Undergrad degree
+  img:  /static/assets/img/landing/du.png
+  title: "I got a lot out of school"

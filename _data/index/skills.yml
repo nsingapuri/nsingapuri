@@ -4,3 +4,20 @@ label: Ability
 id : cs
 aspects: GitHub, Motivation, HTML5, ReactJS, Machine Learing, Python, Sleeping
 percentage: 100, 35, 65, 80, 70, 90, 50
+
+label: People and Project Management
+id : cs
+aspects: Agile, Hiring, Mentoring, Project Management, Roadmapping
+percentage: 60, 80, 75, 65, 75, 70
+
+label: Architecture
+id : cs
+aspects: Algorithms, Data Structures, Design Patterns, MVC, OO, ORM, TDD
+percentage: 80, 60, 40, 80, 80, 60, 60
+
+label: Software Engineering
+id : cs
+aspects: Software Engineering, Makin' Stuff, 3d Modeling, People Management, Project Management, Growin' Plants, Jewelry Design, Web Design, Power Naps, Home Improvement, SEO/SEM, Legos, Dad Jokes
+percentage: 75, 65, 50, 85, 70, 90, 80, 70, 95, 33, 90, 95, 100
+
+

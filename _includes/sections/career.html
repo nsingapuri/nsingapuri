@@ -11,14 +11,33 @@
             {% for career in site.data.index.careers %}
             {% assign loopindex = forloop.index | modulo: 2 %}
                 <div class="vertical-timeline-block">
-                    <div class="vertical-timeline-icon {% if career.present ==  true %} navy-bg-present {% else %} navy-bg {% endif %} wow rotateIn">
+                    <div class="vertical-timeline-icon {% if career.job.date.end == null %} navy-bg-present {% else %} navy-bg {% endif %} wow rotateIn">
                         <i class="fa {{ career.icon }}"></i>
                     </div>
-                    <div class="vertical-timeline-content wow {% if loopindex == 1 %} rotateInUpRight {% else %} rotateInUpLeft {% endif %}">
-                        <h2><span data-i18n="career.{{ career.name.i18n }}">{{ career.name.detail }}</span></h2>
-                        <p><span data-i18n="career.{{ career.desc.i18n }}">{{ career.desc.detail }} </span></p>
-                        <span class="vertical-date"><span data-i18n="career.{{ career.date.i18n }}"> {{ career.date.detail }} </span>
-                        <br/> <small><span data-i18n="career.{{ career.job.i18n }}">{{ career.job.detail }}</span></small> </span>
+                    <div class="vertical-timeline-content wow {% if career.job.date.end == 1 %} rotateInUpRight {% else %} rotateInUpLeft {% endif %}">
+                        <div style="text-align: center">
+                            <div style="text-align: cente; width: 100%; margin: 1em auto; background: #E5E5E5; padding: 10px">
+                                {% if career.img %}
+                                <img src="{{ career.img | prepend: site.baseurl }}" class="img-responsive" alt="{{ career.employer.name }}" style="width: 100%; margin: 1em auto;">
+                                {% endif %}
+                                <h2 class="permanent-marker-regular"><span data-i18n="career.{{ career.i18n }}_name">{{ career.title }}</span></h2>
+                            </div>
+                        </div>
+                        <span class="vertical-date"><span data-i18n="career.{{ career.i18n }}_date">
+                            {% if career.employmentDate.endDate %}
+                                {{ career.employmentDate.startDate }} - {{ career.employmentDate.endDate }}
+                            {% else %}
+                                {{ career.employmentDate.startDate }} - present
+                            {% endif %}
+                        </span>
+                        <h3><span data-i18n="career.{{ career.i18n }}_job">{{ career.employer.name }}</span></h3>
+                        <p>
+                            <small><span data-i18n="career.{{ career.i18n }}_title">{{ career.jobDescription.title }} </span></small>
+                            <br/> <span data-i18n="career.{{ career.i18n }}_job">{{ career.jobDescription.summary }}</span>
+                            <br/> <span data-i18n="career.{{ career.i18n }}_detail">{{ career.desc.detail }} </span>
+                        </p>
+                    </span>
+
                     </div>
                 </div>
             {% endfor %}
