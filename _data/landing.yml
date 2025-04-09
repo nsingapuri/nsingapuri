@@ -21,7 +21,7 @@
 - id: letstalk
   i18n: nav.letstalk
   name: Lets Talk
-  tpl: letsTalk.html
+  tpl: letstalk.html
   css: project
 
 - id: experience
