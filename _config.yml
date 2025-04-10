@@ -4,11 +4,11 @@
 title: "Nalin Singapuri: Software Engineer and Web Developer. San Antonio, Tx"
 description: Product and Projects by Nalin Singapuri
 keywords: Nalin,Singapuri,Shopify,Code,Developer,Engineer,Software
-baseurl:  /nsingapuri # if you have suburl as homepage like '/homepage', please change it to '/homepage' and your repo's name should be 'homepage'
+#baseurl:  /nsingapuri # if you have suburl as homepage like '/homepage', please change it to '/homepage' and your repo's name should be 'homepage'
 #url: https://nsingapuri.github.io/nsingapuri  # url should be 'http://<github_username>.github.io/homepage' as before
-url: http://127.0.0.1:4000
+#url: http://127.0.0.1:4000
 permalink: pretty
-img_path: /nsingapuri/static/assets/img/blog  # url should be '/homepage/static/assets/img/blog' as before
+img_path: /static/assets/img/blog  # url should be '/homepage/static/assets/img/blog' as before
 
 navtitle: Nalin Singapuri
 h1title: "Howdy, I'm <span id=\"nalin\">NALIN</span>  <span id=\"singapuri\">SINGAPURI</span>, and yes, I'll build it for you"
