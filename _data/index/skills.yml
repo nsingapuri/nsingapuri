@@ -21,3 +21,32 @@ aspects: Software Engineering, Makin' Stuff, 3d Modeling, People Management, Pro
 percentage: 75, 65, 50, 85, 70, 90, 80, 70, 95, 33, 90, 95, 100
 
 
+label: Software Engineering
+id : cs
+skills:
+- name: Software Engineering
+  proficiency: 75
+- name: Makin' Stuff
+  proficiency: 80
+- name: 3d Modeling
+  proficiency: 60
+- name: Project Management, 
+  proficiency: 85
+- name: People Management, 
+  proficiency: 75
+- name: Growin' Plants, 
+  proficiency: 80
+- name: Jewelry Design, 
+  proficiency: 85
+- name: Website Design, 
+  proficiency: 95
+- name: Power Nappin', 
+  proficiency: 90
+- name: Home Improvement, 
+  proficiency: 40
+- name: SEO/SEM, 
+  proficiency: 80
+- name: Lego Buildin', 
+  proficiency: 85
+- name: Dad Jokes, 
+  proficiency: 99

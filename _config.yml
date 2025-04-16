@@ -1,8 +1,8 @@
 # Welcome to Jekyll!
 
 # Website settings
-title: "Nalin Singapuri: Software Engineer and Web Developer. San Antonio, Tx"
-description: Product and Projects by Nalin Singapuri
+title: "Nalin Singapuri: Website Development and Marketing. San Antonio, Tx"
+description: Website Design by Nalin Singapuri
 keywords: Nalin,Singapuri,Shopify,Code,Developer,Engineer,Software
 #baseurl:  /nsingapuri # if you have suburl as homepage like '/homepage', please change it to '/homepage' and your repo's name should be 'homepage'
 #url: https://nsingapuri.github.io/nsingapuri  # url should be 'http://<github_username>.github.io/homepage' as before
@@ -18,13 +18,13 @@ author:  # change following line to your infomation.
   name: GitHub  # Be used at blog posts' author.
   first_name: Nalin  # Be used at index page about me section.
   last_name: Singapuri  # Be used at index page about me section.
-  avatar: /static/assets/img/landing/avatar.jpg  # upload your avatar at directory and edit it.
+  avatar: /static/assets/img/landing/avatar.png  # upload your avatar at directory and edit it.
   github_username: nsingapuri  # Leave blank if you don't have now
   linkedin_id: nalinsingapuri # Leave blank if you don't have now
   facebook_username: nalin.singapuri  # Leave blank if you don't have now
   twitter_username:   # Leave blank if you don't have now
   email: nalins@gmail.com  # Leave blank if you don't have now
-  cv: http://cv.jarrekk.com  # An online CV can be printed as PDF, leave blank if you don't have now
+  # cv: http://cv.jarrekk.com  # An online CV can be printed as PDF, leave blank if you don't have now
   # skill icons are on avatar's left and right side. Reference urls are http://fontawesome.io/ and http://fizzed.com/oss/font-mfizz
   skill_icon1:
     - name: icon-apache
@@ -33,11 +33,13 @@ author:  # change following line to your infomation.
     - name: fa-linux
     - name: icon-apache
   desc: "
-    Hi, I’m Nalin. I’ve dedicated the last twenty-five years to building websites, software, products, teams, and companies. I’m at home in all these domains, but my best skill is listening, sussing out exactly what you want, and figuring out a good mix of off the shelf and custom software to get you there.<br/><br/>
-    My home base is San Antonio, Tx and many of my clients are local. However, unless your project involves driving to a mainframe and loading in some punch cards, I can probably do it remotely. Feel free to reach out for a quote.<br/><br/>
-    In my free time, I enjoy growing gigantic plants, manifesting ideas with 3d printers, metal and epoxy, traveling, and playing Legos with my son.
+    Hi, I’m Nalin. I’ve dedicated twenty-five years to building websites, software, products, teams, and companies. I’m at home in all these domains, but my best skill is listening, sussing out exactly what you want, and figuring out a good mix of off-the-shelf and custom software to get you there.
   "
-  
+  longdesc: "
+    My home base is San Antonio, TX and many of my clients are local. However, unless your project involves driving to a mainframe and loading in some punch cards, I can probably do it remotely. Feel free to reach out for a quote.
+    <br><br>
+    In my free time, I enjoy growing gigantic plants, traveling, building Lego sets with my son, and manifesting ideas with 3d printers, metal, and epoxy
+  "
 
 # comment
 #disqus:  # if you wanna comment feature, go to https://disqus.com/ to get your configuration; if not, comment following two lines.

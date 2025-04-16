@@ -1,13 +1,15 @@
 ---
+
 title: "Museum of Jewelry"
-layout: casestudies
+
+layout: casestudy
+h1title: Museum of Jewelry
+h2title: Reinventing a catalog brand
+
 
 name: Museum of Jewelry
 type: ecommerce
 domain: fashion
-
-h1title: Museum of Jewelry
-h2title: Reinventing a catalog brand
 
 ataglance:
 - heading: Role
@@ -71,6 +73,6 @@ Because of the long term nature of this project, I've migrated the site a few ti
 
 The Museum of Jewelry's target demographic, generally folks who are a bit older and sometimes less technically inclined, presents some unique challenges and opportunities. Despite this, through continuous iteration, responsive design improvements, and integration of customer feedback, their website has evolved to became a central platform for their brand, connecting them with a global audience and bringing in fresh customers.
 
-Beyond handling all their technical needs, I've focused heavily on expanding their footprint in third party marketplaces such as Etsy, eBay and Amazon as well as on search and social marketing. Their website receives excellent natural traffic, in part because their blog has become an authoritative source on historic jewelry, and in part because their product catalog and copy writing lends itself to long tail targeting. In addition to natural results across a breadth of terms, we've also been able to get consistently strong results on more competitive keywords like "ruby," "opal earrings," and "Egyptian jewelry." This is predominantly done through targeted content creation, metadata optimization, back link building around such terms. As the Museum of Jewelry no longer manufactures new pieces, in some cases content creation included fleshing out their product offerings, which is how the [BoneNE line](/nsingapuri/casestudies/bonene/) was born
+Beyond handling all their technical needs, I've focused heavily on expanding their footprint in third party marketplaces such as Etsy, eBay and Amazon as well as on search and social marketing. Their website receives excellent natural traffic, in part because their blog has become an authoritative source on historic jewelry, and in part because their product catalog and copy writing lends itself to long tail targeting. In addition to natural results across a breadth of terms, we've also been able to get consistently strong results on more competitive keywords like "ruby," "opal earrings," and "Egyptian jewelry." This is predominantly done through targeted content creation, metadata optimization, back link building around such terms. As the Museum of Jewelry no longer manufactures new pieces, in some cases content creation included fleshing out their product offerings, which is how the [BoneNE line](/casestudies/bonene/) was born
 
 The site receives substantial organic traffic (google: 171k clicks, 13.6m impression in the last 12 months). The result has been transformative: a website that garnered just a few hundred dollars a month in sales has grown into a thriving online store generating tens of thousands in sales monthly. It's been incredibly rewarding to watch the brand re-grow and flourish through the digital foundation we built together.

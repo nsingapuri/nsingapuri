@@ -2,6 +2,7 @@
 $primary: #ff6400;
 $primary-dark: #8047ff;
 $secondary: #2fa1d6;
+$black: #676a6c;
 /*
 $black: #2f2f41;
 $white: #ffffff;
@@ -18,23 +19,27 @@ a:hover {
 
 #nalin::before  {
   content: "ADRE";
-  color: #DDD;
+  color: #AAA;
 }
 
 #nalin::after {
   content: "E";
-  color: #DDD;
+  color: #AAA;
 }
-h1:hover #nalin, h1:hover #singapuri {
+h1 #nalin, h1 #singapuri {
   color: $primary-dark;
 }
+h1:hover #nalin, h1:hover #singapuri {
+  color: $black;
+}
+
 h1:hover #nalin::before  {
   content: "ADRE";
-  color: #AAA;
+  color: #DDD;
 }
 h1:hover #nalin::after {
   content: "E";
-  color: #AAA;
+  color: #DDD;
 }
 
 .permanent-marker-regular {
@@ -293,7 +298,7 @@ body.canvas-menu .nav-header {
   .nav > li {
     > a {
       padding: 15px 20px;
-      color: #676a6c;
+      color: $black;
     }
     a {
       &:focus, &:hover {
@@ -1072,7 +1077,7 @@ label.error {
 }
 
 .author-info {
-  color: #676a6c;
+  color: $black;
   font-size: 11px;
   margin-top: 5px;
 }
@@ -1297,7 +1302,7 @@ body {
   font-family: "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: #2f4050;
   font-size: 13px;
-  color: #676a6c;
+  color: $black;
   height: 100%;
 }
 
@@ -1866,7 +1871,7 @@ ul.clear-list:first-child {
 }
 
 .file-name small {
-  color: #676a6c;
+  color: $black;
 }
 
 .vote-icon, .vote-title {
@@ -1931,13 +1936,13 @@ ul.clear-list:first-child {
 
 .project-title a {
   font-size: 14px;
-  color: #676a6c;
+  color: $black;
   font-weight: 600;
 }
 
 .project-files li a {
   font-size: 11px;
-  color: #676a6c;
+  color: $black;
   margin-left: 10px;
   line-height: 22px;
 }
@@ -2088,7 +2093,7 @@ body {
     display: none;
   }
   &.landing-page {
-    color: #676a6c;
+    color: $black;
     font-family: 'Open Sans', helvetica, arial, sans-serif;
     background-color: #fff;
   }
@@ -2439,7 +2444,7 @@ body {
     color: $primary;
   }
   p.text-color {
-    color: #676a6c;
+    color: $black;
   }
   a.navy-link {
     color: $primary;
@@ -2544,7 +2549,7 @@ body {
     }
   }
   .navbar-scroll.navbar-default .nav li a {
-    color: #676a6c;
+    color: $black;
     &:hover {
       color: $primary;
     }
@@ -2839,7 +2844,7 @@ body {
         color: inherit;
       }
       .nav li a {
-        color: #676a6c;
+        color: $black;
         &:hover {
           color: $primary;
         }

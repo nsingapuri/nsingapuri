@@ -9,7 +9,8 @@
     {% for project in casestudies %}
         <div class="row align-middle" style="margin-top: 2em;">
         {% assign loopindex = forloop.index | plus: 0 %}
-        {% if forloop.index >= 4 %}
+        {% if forloop.index > page.case_studies_max %}
+            {% assign moreCaseStudies = true %}
             {% break %}
         {% endif %}
         {% assign loopindex = forloop.index | modulo: 2 %}
@@ -56,6 +57,13 @@
 
             <br style="clear: both; padding-bottom: 2em;"><br/>
     </div>
-      {% endfor %}
+    {% endfor %}
+    {% if moreCaseStudies %}
+    <div style="font-size: 24px; text-align: center;">
+        you can find more of the <a href="{{ '/casestudy/' | relative_url }}">
+            websites I've built
+        </a> here.
+        <br style="clear: both; padding-bottom: 2em;"><br/>
+    </div>
+    {% endif %}
 </div>
-<br>

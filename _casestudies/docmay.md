@@ -1,6 +1,6 @@
 ---
 title: "Dr Erin May"
-layout: casestudies
+layout: casestudy
 
 name: Dr. Erin May
 type: service / lead generation

@@ -1,6 +1,6 @@
 ---
 title: "BoneNE"
-layout: casestudies
+layout: casestudy
 
 name: BoneNE
 type: ecommerce
@@ -46,7 +46,7 @@ headline: I cofounded BoneNE to help the Museum of Jewelry round out product off
 desc: Historic Jewelry Reproductions.
 
 date: 2018-11-19T10:47:58+10:00
-promoted: true
+promoted: false
 weight: 3
 
 intro_image: "/static/assets/img/casestudies/bonene.com.full.jpg"

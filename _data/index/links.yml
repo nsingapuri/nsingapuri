@@ -1,9 +1,9 @@
 # links section data
-- last_name: Name 1
-  first_name:
-  desc: CEO
-  website: https://www.google.com
-  email: ceo@google.com
+- last_name: Writing
+  first_name: Sample
+  desc: 
+  website: https://www.yelp.com/biz/yoshi-shabu-shabu-richardson?hrid=ojJyb9GX8TfZpCStTcq91g
+  email: 
 
 - last_name: Donate
   first_name: Jalpc

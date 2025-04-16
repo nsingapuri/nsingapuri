@@ -1,6 +1,6 @@
 ---
 title: "PlantyTown"
-layout: casestudies
+layout: casestudy
 
 name: PlantyTown
 type: ecommerce
@@ -55,7 +55,7 @@ headline: I accidentally built a PlantyTown, because I was watering way too many
 desc: Plant Nursury with a line of custom jewelry.
 
 date: 2018-11-19T10:47:58+10:00
-promoted: true
+promoted: false
 weight: 2
 
 intro_image: "/static/assets/img/casestudies/planty.town.full.jpg"
