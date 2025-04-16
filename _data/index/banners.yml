@@ -2,6 +2,9 @@
 # Add items for each banner image in the carousel
 #
 # Images are expected to be located in `static/assets/img/`.
+- src: landing/banner6.jpg
+  title: why should I hire NALIN for web development - a helpful guide
+
 - src: landing/banner7.jpg
   title: image of woman hugging man, overlaid with the text 'my face when you describe your idea, and it sounds pretty ok'
 

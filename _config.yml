@@ -24,6 +24,8 @@ author:  # change following line to your infomation.
   facebook_username: nalin.singapuri  # Leave blank if you don't have now
   twitter_username:   # Leave blank if you don't have now
   email: nalins@gmail.com  # Leave blank if you don't have now
+  phone: 469.847.0496  # Leave blank if you don't have now
+  address: San Antonio, Tx. 78212  # Leave blank if you don't have now
   # cv: http://cv.jarrekk.com  # An online CV can be printed as PDF, leave blank if you don't have now
   # skill icons are on avatar's left and right side. Reference urls are http://fontawesome.io/ and http://fizzed.com/oss/font-mfizz
   skill_icon1:
@@ -33,12 +35,10 @@ author:  # change following line to your infomation.
     - name: fa-linux
     - name: icon-apache
   desc: "
-    Hi, I’m Nalin. I’ve dedicated twenty-five years to building websites, software, products, teams, and companies. I’m at home in all these domains, but my best skill is listening, sussing out exactly what you want, and figuring out a good mix of off-the-shelf and custom software to get you there.
+    Hi, I’m Nalin. I’ve dedicated <em>twenty-five years</em> to building websites, software, products, teams, and companies. I’m at home in all these domains, but <strong>my best skill is listening</strong>, sussing out exactly what you want, and figuring out how to get you there.
   "
   longdesc: "
-    My home base is San Antonio, TX and many of my clients are local. However, unless your project involves driving to a mainframe and loading in some punch cards, I can probably do it remotely. Feel free to reach out for a quote.
-    <br><br>
-    In my free time, I enjoy growing gigantic plants, traveling, building Lego sets with my son, and manifesting ideas with 3d printers, metal, and epoxy
+      In my free time, I enjoy growing gigantic plants, traveling, building Lego sets with my son, and manifesting ideas with 3d printers, metal, and epoxy
   "
 
 # comment

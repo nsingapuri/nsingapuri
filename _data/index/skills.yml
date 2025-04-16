@@ -20,33 +20,36 @@ id : cs
 aspects: Software Engineering, Makin' Stuff, 3d Modeling, People Management, Project Management, Growin' Plants, Jewelry Design, Web Design, Power Naps, Home Improvement, SEO/SEM, Legos, Dad Jokes
 percentage: 75, 65, 50, 85, 70, 90, 80, 70, 95, 33, 90, 95, 100
 
-
-label: Software Engineering
+label: Nalin
 id : cs
 skills:
-- name: Software Engineering
-  proficiency: 75
+- name: Website Design 
+  proficiency: 95
+- name: Project Management
+  proficiency: 80
+- name: Copy-writing
+  proficiency: 55
+- name: SEO/SEM
+  proficiency: 85
+- name: Dad Jokes
+  proficiency: 99
 - name: Makin' Stuff
   proficiency: 80
+- name: Software Engineering
+  proficiency: 75
 - name: 3d Modeling
   proficiency: 60
-- name: Project Management, 
-  proficiency: 85
-- name: People Management, 
+- name: Product Photography
+  proficiency: 80
+- name: People Management 
   proficiency: 75
-- name: Growin' Plants, 
+- name: Growin' Plants
   proficiency: 80
-- name: Jewelry Design, 
+- name: Jewelry Design 
   proficiency: 85
-- name: Website Design, 
-  proficiency: 95
-- name: Power Nappin', 
+- name: Power Nappin'
   proficiency: 90
-- name: Home Improvement, 
+- name: Home Improvement 
   proficiency: 40
-- name: SEO/SEM, 
-  proficiency: 80
-- name: Lego Buildin', 
+- name: Lego Buildin'
   proficiency: 85
-- name: Dad Jokes, 
-  proficiency: 99
