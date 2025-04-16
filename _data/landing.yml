@@ -13,6 +13,12 @@
   css: project
   page: casestudy/
 
+- id: skills
+  i18n: nav.skills
+  name: Proficiencies
+  tpl: skills.html
+  css: timeline
+
 - id: experience
   i18n: nav.career
   name: Career

@@ -8,60 +8,13 @@
     </div>
     <div class="row">
         <div class="col-md-6 text-center">
-            <h2 class="space-mono-bold">Proficiencies</h2>
-            {% capture skillNames %}
-                {% for skill in site.data.index.skills.skills %}
-                    {% if skill.name.first %}
-                        [
-                        {% for skillname in skill.name %}
-                            "{{ skillname }}"{% unless forloop.last %}, {% endunless -%}
-                        {% endfor %}
-                        ]
-                    {% else %}
-                        "{{ skill.name }}"
-                    {% endif %}
-                    {% unless forloop.last %}, {% endunless -%}
-                {% endfor %}
-            {% endcapture %}
-            {% capture skillValues %}
-                {% for skill in site.data.index.skills.skills %}
-                    {{ skill.proficiency }}{% unless forloop.last %}, {% endunless -%}
-                {% endfor %}
-            {% endcapture %}
-            
-            <canvas id="{{ site.data.index.skills.id }}" height="500" width="1000"></canvas>
+            <h2 class="space-mono-bold">About</h2>
+            <p><span data-i18n="about_me.des">{{ site.author.desc }}</span></p>
+            <p><span data-i18n="about_me.des">{{ site.author.longdesc }}</span></p>
+        </div>
+        <div class="col-md-6 text-center">
 
-            <script>
-            var ctx = document.getElementById("{{ site.data.index.skills.id }}");
-
-            const data = {
-              labels: [{{ skillNames | strip }}],
-              datasets: [{
-                label: 'Nalin',
-                data: [{{ skillValues | strip | join ', '}}],
-                fill: true,
-                backgroundColor: 'rgba(255, 100, 0, 0.2)',
-                borderColor: '#FF6400',
-                pointBackgroundColor: '#8047ff',
-                pointBorderColor: '#fff',
-                pointHoverBackgroundColor: '#fff',
-                pointHoverBorderColor: '#8047ff'
-              }]
-            };
-            var myRadarChart = new Chart(ctx, {
-                type: 'radar',
-                data: data,
-                options: {
-                    scale: {
-                        responsive: true,
-                        ticks: {min: 0, max: 100},
-                        lineArc: false,
-                    },
-                    legend: {display: false},
-                }
-            });
-            </script>
-            <h2 class="space-mono-bold" style="margin-top: 3em;">Get In Touch</h2>
+            <h2 class="space-mono-bold">Get In Touch</h2>
             <ul class="dd">
                 <li><div data-fillout-id="dP3FvHmZL8us" data-fillout-embed-type="popup" data-fillout-button-text="Get a Quote" data-fillout-button-color="#FF6900" data-fillout-inherit-parameters data-fillout-popup-size="medium"></div><script src="https://server.fillout.com/embed/v1/"></script><br/></li>
 
@@ -70,22 +23,15 @@
                 <li><a href="mailto:{{ site.author.email }}"><i class="fa fa-envelope-o"></i> {{ site.author.email }}</a></li>
                 {% endif %}
                 <li><i class="fa fa-location-dot"></i> {{ site.author.address }}</li>
-                
             </ul>
         </div> 
-        <div class="col-md-6 text-center">
-            <h2 class="space-mono-bold">About</h2>
-            <p><span data-i18n="about_me.des">{{ site.author.desc }}</span></p>
+    </div>
+    <div class="row">
+        <div class="col-lg-12 text-center">
             <div class="team-member wow zoomIn">
                 <img src="{{ site.author.avatar | prepend: site.baseurl }}" width="100%" class="img-responsive" alt="my process"><br/>
                 (my process)<br/><br/>
             </div>
-
-            <p><span data-i18n="about_me.des">{{ site.author.longdesc }}</span></p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-lg-12 text-center">
             <h2 class="space-mono-bold" style="margin-top: 3em;">Follow Me?</h2>
             <ul class="list-inline social-icon">
                 {% if site.author.github_username %}

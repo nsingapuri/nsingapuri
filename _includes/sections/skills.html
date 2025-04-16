@@ -1,0 +1,64 @@
+{% capture skillNames %}
+    {% for skill in site.data.index.skills.skills %}
+        {% if skill.name.first %}
+            [
+            {% for skillname in skill.name %}
+                "{{ skillname }}"{% unless forloop.last %}, {% endunless -%}
+            {% endfor %}
+            ]
+        {% else %}
+            "{{ skill.name }}"
+        {% endif %}
+        {% unless forloop.last %}, {% endunless -%}
+    {% endfor %}
+{% endcapture %}
+{% capture skillValues %}
+    {% for skill in site.data.index.skills.skills %}
+        {{ skill.proficiency }}{% unless forloop.last %}, {% endunless -%}
+    {% endfor %}
+{% endcapture %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12 text-center" id="i18_skills">
+            <div class="navy-line"></div>
+            <h1><span data-i18n="skills.my_skills">My Skills</span></h1>
+        </div>
+    </div>
+    <div class="row features-block" style="margin: 2em;">
+        <div class="wow zoomIn col-lg-6 col-lg-offset-3">
+            <canvas id="{{ site.data.index.skills.id }}" height="500" width="1000"></canvas>
+        </div>
+        <div class="col-lg-1"></div>
+        <script>
+            var ctx = document.getElementById("{{ site.data.index.skills.id }}");
+
+            const data = {
+              labels: [{{ skillNames | strip }}],
+              datasets: [{
+                label: 'Nalin',
+                data: [{{ skillValues | strip | join ', '}}],
+                fill: true,
+                backgroundColor: 'rgba(255, 100, 0, 0.2)',
+                borderColor: '#FF6400',
+                pointBackgroundColor: '#8047ff',
+                pointBorderColor: '#fff',
+                pointHoverBackgroundColor: '#fff',
+                pointHoverBorderColor: '#8047ff'
+              }]
+            };
+            var myRadarChart = new Chart(ctx, {
+                type: 'radar',
+                data: data,
+                options: {
+                    scale: {
+                        responsive: true,
+                        ticks: {min: 0, max: 100},
+                        lineArc: false,
+                    },
+                    legend: {display: false},
+                }
+            });
+            </script>
+    </div>
+</div>
