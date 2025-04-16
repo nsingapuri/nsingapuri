@@ -23,16 +23,18 @@ percentage: 75, 65, 50, 85, 70, 90, 80, 70, 95, 33, 90, 95, 100
 label: Nalin
 id : cs
 skills:
-- name: Website Design 
+- name: ['Building you a','kickass Website']
   proficiency: 95
 - name: Project Management
   proficiency: 80
 - name: Copy-writing
   proficiency: 55
-- name: SEO/SEM
+- name: UI/UX
+  proficiency: 75
+- name: ['Search Engine Optimization','Search Engine Marketing']
   proficiency: 85
 - name: Dad Jokes
-  proficiency: 99
+  proficiency: 70
 - name: Makin' Stuff
   proficiency: 80
 - name: Software Engineering
@@ -41,10 +43,14 @@ skills:
   proficiency: 60
 - name: Product Photography
   proficiency: 80
+- name: Radar Charts
+  proficiency: 100
 - name: People Management 
   proficiency: 75
 - name: Growin' Plants
   proficiency: 80
+- name: Work Life Balance
+  proficiency: 65
 - name: Jewelry Design 
   proficiency: 85
 - name: Power Nappin'
