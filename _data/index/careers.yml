@@ -111,7 +111,7 @@
     endDate: '2008'
   jobDescription:
     title: CoFounder
-    summary: Real estate search engine similar in concept to Zillow or Trulia. We raided over 1m in invesor funding and built an impressive MVP in a crashing real estate market.
+    summary: Real estate search engine similar in concept to Zillow or Trulia. We raised over 1m in invesor funding and built an impressive MVP in a crashing real estate market.
   img:  /static/assets/img/landing/nextprodigy.png
   title: "team building"
 
@@ -130,7 +130,7 @@
     endDate: '2006'
   jobDescription:
     title: Internet Technology Manager
-    summary: B2B Communications Provider. I ran the website and marketing as well as some tech support/helpdesk type tasks.
+    summary: B2B Communications Provider. I ran the website, allocated 20k/month in marketing spend, and handled some tech support/helpdesk type tasks.
   img:  /static/assets/img/landing/nativesun.jpg
   title: "work doesn't feel like work, when you are having fun"
 

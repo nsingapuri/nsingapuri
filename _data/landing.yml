@@ -8,9 +8,10 @@
 
 - id: projects
   i18n: nav.projects
-  name: Case Studies
+  name: Portfolio
   tpl: projects.html
   css: project
+  page: casestudy/
 
 - id: experience
   i18n: nav.career

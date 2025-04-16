@@ -51,8 +51,8 @@ logo: /static/assets/img/casestudies/plantytown-logo.jpeg
 img: /static/assets/img/casestudies/planty.town.png
 
 title: Rare Plants and Accessories
-headline: I accidentally built a PlantyTown, because I was watering way too many plants
-desc: Plant Nursury with a line of custom jewelry.
+headline: I founded a Nursery out of my back yard and designed a line of jewelry at PlantyTown
+desc: Plant Nursery with a line of custom jewelry.
 
 date: 2018-11-19T10:47:58+10:00
 promoted: false
@@ -63,7 +63,7 @@ intro_image_absolute: false
 intro_image_hide_on_mobile: false
 ---
 
-PlantyTown began not as a grand business venture, but as a solution to a personal problem. I'd amassed a collection of rare and exotic plants — more than my home could easily accommodate . What started as an effort to offload a few treasured specimens quickly grew into a thriving online market for plant enthusiasts seeking hard-to-find greenery.
+PlantyTown began not as a grand business venture, but as a solution to a personal problem. I'd amassed a collection of rare and exotic plants — more than my home could easily accommodate. What started as an effort to offload a few treasured specimens quickly grew into a thriving online market for plant enthusiasts seeking hard-to-find greenery.
 
 Launched as a niche website with a selection of species catering to collectors, PlantyTown gained early traction thanks to my careful curation. Each plant was treated like a work of art, complete with detailed care instructions and provenance. The site built a loyal following.
 
