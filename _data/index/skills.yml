@@ -53,10 +53,6 @@
     proficiency: 60
   - name: 3d Printing
     proficiency: 80
-  - name: Ceramics
-    proficiency: 70
-  - name: Drawing
-    proficiency: 75
   - name: Epoxy
     proficiency: 65
   - name: Home Improvement 
@@ -73,8 +69,6 @@
     proficiency: 90
   - name: Packaging
     proficiency: 75
-  - name: Painting
-    proficiency: 60
   - name: Woodworking
     proficiency: 60
 
@@ -149,9 +143,9 @@
 - label: Things I Do For Fun
   id : jff
   skills:
-  - name: Chess
+  - name: Ceramics
     proficiency: 100
-  - name: Coffee
+  - name: Chess
     proficiency: 100
   - name: Cooking
     proficiency: 100
@@ -159,27 +153,27 @@
     proficiency: 100
   - name: Dad Jokes
     proficiency: 0
+  - name: Drawing
+    proficiency: 100
   - name: Don't Starve
     proficiency: 100
   - name: Faster Than Light
     proficiency: 100
   - name: Growin' Plants
     proficiency: 100
-  - name: Half Life
-    proficiency: 100
   - name: Kerble Space
-    proficiency: 100
-  - name: Left For Dead
     proficiency: 100
   - name: Mini Metro
     proficiency: 100
-  - name: Portal
+  - name: Painting
     proficiency: 100
   - name: Power Naps
     proficiency: 100
-  - name: Unreal Tournament
+  - name: Reading
     proficiency: 100
-  - name: Vacations
+  - name: Travel
+    proficiency: 100
+  - name: Unreal Tournament
     proficiency: 100
     
 
