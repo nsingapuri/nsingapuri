@@ -2,20 +2,20 @@
 # Add items for each banner image in the carousel
 #
 # Images are expected to be located in `static/assets/img/`.
-- src: landing/banner12.jpg
+- src: landing/banner12.png
   title: a brief overview of my process
 
-- src: landing/banner8.jpg
-  title: image of father teaching a boy to drive, overlaid with the text '1) Lets Talk. I’ll dial in on your goals and ask the important questions to get you there.'
+# - src: landing/banner8.jpg
+#   title: image of father teaching a boy to drive, overlaid with the text '1) Lets Talk. I’ll dial in on your goals and ask the important questions to get you there.'
 
-- src: landing/banner9.jpg
-  title: image of father holding a newborn baby, overlaid with the text '2) Great idea! I got excited and built a demo before contract is inked, for funzies'
+# - src: landing/banner9.jpg
+#   title: image of father holding a newborn baby, overlaid with the text '2) Great idea! I got excited and built a demo before contract is inked, for funzies'
 
-- src: landing/banner10.jpg
-  title: image of developer in front of computer screens full of david hasslehoff trolls, overlaid with the text '3) You hand a project off and its...a little more technical debt than I knew I was getting into.'
+# - src: landing/banner10.jpg
+#   title: image of developer in front of computer screens full of david hasslehoff trolls, overlaid with the text '3) You hand a project off and its...a little more technical debt than I knew I was getting into.'
 
-- src: landing/banner7.jpg
-  title: image of an abstracted woman embracing man, overlaid with the text '4) we launch, and everything goes as planned, because you are dealing with a consumate professional. Thanks'
+# - src: landing/banner7.jpg
+#   title: image of an abstracted woman embracing man, overlaid with the text '4) we launch, and everything goes as planned, because you are dealing with a consumate professional. Thanks'
 
-- src: landing/banner11.jpg
-  title: image of  a child atop a fathers shoulders overlaid with the text '5) Website design is an iterative process. I’m available for updates when you need me'
+# - src: landing/banner11.jpg
+#   title: image of  a child atop a fathers shoulders overlaid with the text '5) Website design is an iterative process. I’m available for updates when you need me'

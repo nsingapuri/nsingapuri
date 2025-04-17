@@ -2,12 +2,12 @@
     <div class="row">
         <div class="col-lg-12 text-center" id="i18_skills">
             <div class="navy-line"></div>
-            <h1><span data-i18n="skills.my_skills">My Proficiencies</span></h1>
+            <h2 style="font-size: 250%;"><span data-i18n="skills.my_skills">My Proficiencies</span></h2>
         </div>
     </div>
     <div class="row features-block" style="margin: 2em;">
         {% for skillset in site.data.index.skills %}
-
+            {% assign loopindex = forloop.index | modulo: 2 %}
             {% capture skillNames %}
                 {% for skill in skillset.skills %}
                     {% if skill.name.first %}
@@ -27,10 +27,27 @@
                     {{ skill.proficiency }}{% unless forloop.last %}, {% endunless -%}
                 {% endfor %}
             {% endcapture %}
+
+
+            {% if loopindex == 0 AND skillset.img %}
+            <div class="wow zoomIn col-lg-6">
+                <img src="{{ skillset.img | prepend: site.baseurl }}" class="img-responsive"/>
+            </div>
+            {% endif %}          
+
             <div class="wow zoomIn col-lg-6">
                 <h2 class="text-center permanent-marker-regular" style="margin-top: 2em; font-weight: bold;">{{ skillset.label }}</h2>
                 <canvas id="{{ skillset.id }}" height="500" width="1000"></canvas>
             </div>
+            {% if loopindex == 1 AND skillset.img %}
+            <div class="wow zoomIn col-lg-6">
+                <img src="{{ skillset.img | prepend: site.baseurl }}" class="img-responsive"/>
+            </div>
+            {% endif %} 
+
+            {% if skillset.img %}
+            <br style="clear: both;">
+            {% endif %}            
 
             <script>
                 var ctx = document.getElementById("{{ skillset.id }}");
@@ -62,7 +79,7 @@
                         legend: {display: false},
                     }
                 });
-                </script>
+            </script>
         {% endfor %}
     </div>
 </div>

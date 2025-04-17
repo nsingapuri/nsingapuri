@@ -39,10 +39,10 @@
     proficiency: 75
   - name: Product Photography
     proficiency: 80
-  - name: Server Administration
-    proficiency: 85
   - name: ['Radar charts','(and other data visualizations)']
     proficiency: 90
+  - name: Server Administration
+    proficiency: 85
 
 - label: Makin' Stuff
   id : art
@@ -109,6 +109,8 @@
   skills:
   - name: Algorithms
     proficiency: 80
+  - name: Bash
+    proficiency: 75
   - name: C/C++
     proficiency: 70
   - name: Data Structures
@@ -119,9 +121,9 @@
     proficiency: 70
   - name: Model View Controller
     proficiency: 80
-  - name: Object Oriented Programming
+  - name: OOP
     proficiency: 90
-  - name: Object Relational Model (ORM)
+  - name: ORM
     proficiency: 75
   - name: Perl
     proficiency: 50
