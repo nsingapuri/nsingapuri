@@ -43,8 +43,6 @@
     proficiency: 85
   - name: ['Radar charts','(and other data visualizations)']
     proficiency: 90
-  - name: Having Fun
-    proficiency: 100
 
 - label: Makin' Stuff
   id : art
@@ -149,7 +147,7 @@
     proficiency: 100
   - name: Cooking
     proficiency: 100
-  - name: CIV 5
+  - name: CIV 5 (and not 6)
     proficiency: 100
   - name: Dad Jokes
     proficiency: 0
