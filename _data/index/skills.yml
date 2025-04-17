@@ -86,6 +86,24 @@
   - name: Tiktok
     proficiency: 80
 
+- label: People and Project Management
+  id : papm
+  skills:
+  - name: Agile/SCRUM
+    proficiency: 80
+  - name: Firing
+    proficiency: 33
+  - name: Hiring
+    proficiency: 85
+  - name: Mentoring
+    proficiency: 60
+  - name: People Management 
+    proficiency: 75
+  - name: Project Management
+    proficiency: 85
+  - name: Roadmapping
+    proficiency: 60
+
 - label: Software Engineering and Architecture
   id : arch
   skills:
@@ -118,24 +136,6 @@
   - name: Sysadmin (Linux)
     proficiency: 80
   - name: Test Driven Development
-    proficiency: 60
-
-- label: People and Project Management
-  id : papm
-  skills:
-  - name: Agile/SCRUM
-    proficiency: 80
-  - name: Firing
-    proficiency: 33
-  - name: Hiring
-    proficiency: 85
-  - name: Mentoring
-    proficiency: 60
-  - name: People Management 
-    proficiency: 75
-  - name: Project Management
-    proficiency: 85
-  - name: Roadmapping
     proficiency: 60
 
 - label: Things I Do For Fun
