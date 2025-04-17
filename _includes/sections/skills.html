@@ -29,57 +29,50 @@
             {% endcapture %}
 
 
-            {% if loopindex == 0 AND skillset.img %}
-            <div class="wow zoomIn col-lg-6">
-                <img src="{{ skillset.img | prepend: site.baseurl }}" class="img-responsive"/>
-            </div>
-            {% endif %}          
+            {% if skillset.img AND skillset.img != "" %}
+                <div class="wow zoomIn col-md-6 text-center">
+                    <div style="width:50%; margin: {{skillset.top}} auto 0;"><img src="{{ skillset.img | prepend: site.baseurl }}" class="img-responsive"/></div>
+                </div>
+                {% if loopindex == 0 %}<br style="clear: both;">{% endif %}
+            {% else %}
+                <div class="col-md-6">
+                    <h2 class="text-center permanent-marker-regular" style="margin-top: 2em; font-weight: bold;">{{ skillset.label }}</h2>
+                    <canvas id="{{ skillset.id }}" height="500" width="1000"></canvas>
+                </div>
 
-            <div class="wow zoomIn col-lg-6">
-                <h2 class="text-center permanent-marker-regular" style="margin-top: 2em; font-weight: bold;">{{ skillset.label }}</h2>
-                <canvas id="{{ skillset.id }}" height="500" width="1000"></canvas>
-            </div>
-            {% if loopindex == 1 AND skillset.img %}
-            <div class="wow zoomIn col-lg-6">
-                <img src="{{ skillset.img | prepend: site.baseurl }}" class="img-responsive"/>
-            </div>
-            {% endif %} 
 
-            {% if skillset.img %}
-            <br style="clear: both;">
-            {% endif %}            
+                <script>
+                    var ctx = document.getElementById("{{ skillset.id }}");
 
-            <script>
-                var ctx = document.getElementById("{{ skillset.id }}");
-
-                var data = {
-                  labels: [{{ skillNames | strip }}],
-                  datasets: [{
-                    label: 'Nalin',
-                    data: [{{ skillValues | strip | join ', '}}],
-                    fill: true,
-                    backgroundColor: 'rgba(255, 100, 0, 0.2)',
-                    borderColor: '#FF6400',
-                    pointBackgroundColor: '#8047ff',
-                    pointBorderColor: '#fff',
-                    pointHoverBackgroundColor: '#fff',
-                    pointHoverBorderColor: '#8047ff'
-                  }]
-                };
-                var myRadarChart = new Chart(ctx, {
-                    type: 'radar',
-                    data: data,
-                    options: {
-                        scale: {
-                            responsive: true,
-                            ticks: {min: 0, max: 100},
-                            lineArc: false,
-                            pointLabels: {fontSize: 14},
-                        },
-                        legend: {display: false},
-                    }
-                });
-            </script>
+                    var data = {
+                      labels: [{{ skillNames | strip }}],
+                      datasets: [{
+                        label: 'Nalin',
+                        data: [{{ skillValues | strip | join ', '}}],
+                        fill: true,
+                        backgroundColor: 'rgba(255, 100, 0, 0.2)',
+                        borderColor: '#FF6400',
+                        pointBackgroundColor: '#8047ff',
+                        pointBorderColor: '#fff',
+                        pointHoverBackgroundColor: '#fff',
+                        pointHoverBorderColor: '#8047ff'
+                      }]
+                    };
+                    var myRadarChart = new Chart(ctx, {
+                        type: 'radar',
+                        data: data,
+                        options: {
+                            scale: {
+                                responsive: true,
+                                ticks: {min: 0, max: 100},
+                                lineArc: false,
+                                pointLabels: {fontSize: 14},
+                            },
+                            legend: {display: false},
+                        }
+                    });
+                </script>
+            {% endif %}
         {% endfor %}
     </div>
 </div>

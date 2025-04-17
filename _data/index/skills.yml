@@ -44,6 +44,9 @@
   - name: Server Administration
     proficiency: 85
 
+- img : "/static/assets/img/landing/brain1.png"
+  top: 2em
+
 - label: Makin' Stuff
   id : art
   skills:
@@ -86,25 +89,7 @@
   - name: Tiktok
     proficiency: 80
 
-- label: People and Project Management
-  id : papm
-  skills:
-  - name: Agile/SCRUM
-    proficiency: 80
-  - name: Firing
-    proficiency: 33
-  - name: Hiring
-    proficiency: 85
-  - name: Mentoring
-    proficiency: 60
-  - name: People Management 
-    proficiency: 75
-  - name: Project Management
-    proficiency: 85
-  - name: Roadmapping
-    proficiency: 60
-
-- label: Software Engineering and Architecture
+- label: Software Engineering
   id : arch
   skills:
   - name: Algorithms
@@ -139,6 +124,27 @@
     proficiency: 80
   - name: Test Driven Development
     proficiency: 60
+
+- label: Team Building
+  id : papm
+  skills:
+  - name: Agile/SCRUM
+    proficiency: 80
+  - name: Firing
+    proficiency: 33
+  - name: Hiring
+    proficiency: 85
+  - name: Mentoring
+    proficiency: 60
+  - name: People Management 
+    proficiency: 75
+  - name: Project Management
+    proficiency: 85
+  - name: Roadmapping
+    proficiency: 60
+
+- img : "/static/assets/img/landing/brain5.png"
+  top: 4em
 
 - label: Things I Do For Fun
   id : jff
@@ -175,5 +181,7 @@
     proficiency: 100
   - name: Unreal Tournament
     proficiency: 100
+
+
     
 
