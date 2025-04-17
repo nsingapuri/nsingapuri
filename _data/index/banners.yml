@@ -2,20 +2,20 @@
 # Add items for each banner image in the carousel
 #
 # Images are expected to be located in `static/assets/img/`.
-- src: landing/banner6.jpg
-  title: why should I hire NALIN for web development - a helpful guide
-
-- src: landing/banner7.jpg
-  title: image of woman hugging man, overlaid with the text 'my face when you describe your idea, and it sounds pretty ok'
+- src: landing/banner12.jpg
+  title: a brief overview of my process
 
 - src: landing/banner8.jpg
-  title: image of loving father holding a newborn baby, overlaid with the text 'my face when I build a demo before contract and am super proud of the thing I created, for no reason'
+  title: image of father teaching a boy to drive, overlaid with the text '1) Lets Talk. I’ll dial in on your goals and ask the important questions to get you there.'
 
 - src: landing/banner9.jpg
-  title: image of developer in front of computer screens full of david hasslehoff trolls, overlaid with the text 'my face when you hand the project off and its a little more work than I knew I was getting into'
+  title: image of father holding a newborn baby, overlaid with the text '2) Great idea! I got excited and built a demo before contract is inked, for funzies'
 
 - src: landing/banner10.jpg
-  title: image of traveller holding a backpack overlaid with the text 'my face when I dial in on your goals and ask the important questions to get you there '
+  title: image of developer in front of computer screens full of david hasslehoff trolls, overlaid with the text '3) You hand a project off and its...a little more technical debt than I knew I was getting into.'
+
+- src: landing/banner7.jpg
+  title: image of an abstracted woman embracing man, overlaid with the text '4) we launch, and everything goes as planned, because you are dealing with a consumate professional. Thanks'
 
 - src: landing/banner11.jpg
-  title: image of  a child atop a fathers shoulders overlaid with the text 'my face when custom development and consulting work makes your life easier'
+  title: image of  a child atop a fathers shoulders overlaid with the text '5) Website design is an iterative process. I’m available for updates when you need me'

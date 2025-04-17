@@ -1,61 +1,129 @@
 # skills section data
 
-label: Ability
-id : cs
-aspects: GitHub, Motivation, HTML5, ReactJS, Machine Learing, Python, Sleeping
-percentage: 100, 35, 65, 80, 70, 90, 50
+# label: Ability
+# id : cs
+# aspects: GitHub, Motivation, HTML5, ReactJS, Machine Learing, Python, Sleeping
+# percentage: 100, 35, 65, 80, 70, 90, 50
 
-label: People and Project Management
-id : cs
-aspects: Agile, Hiring, Mentoring, Project Management, Roadmapping
-percentage: 60, 80, 75, 65, 75, 70
+# label: People and Project Management
+# id : cs
+# aspects: Agile, Hiring, Mentoring, Project Management, Roadmapping
+# percentage: 60, 80, 75, 65, 75, 70
 
-label: Architecture
-id : cs
-aspects: Algorithms, Data Structures, Design Patterns, MVC, OO, ORM, TDD
-percentage: 80, 60, 40, 80, 80, 60, 60
+# label: Architecture
+# id : cs
+# aspects: Algorithms, Data Structures, Design Patterns, MVC, OO, ORM, TDD
+# percentage: 80, 60, 40, 80, 80, 60, 60
 
-label: Software Engineering
-id : cs
-aspects: Software Engineering, Makin' Stuff, 3d Modeling, People Management, Project Management, Growin' Plants, Jewelry Design, Web Design, Power Naps, Home Improvement, SEO/SEM, Legos, Dad Jokes
-percentage: 75, 65, 50, 85, 70, 90, 80, 70, 95, 33, 90, 95, 100
+# label: Software Engineering
+# id : cs
+# aspects: Software Engineering, Makin' Stuff, 3d Modeling, People Management, Project Management, Growin' Plants, Jewelry Design, Web Design, Power Naps, Home Improvement, SEO/SEM, Legos, Dad Jokes
+# percentage: 75, 65, 50, 85, 70, 90, 80, 70, 95, 33, 90, 95, 100
 
-label: Nalin
-id : cs
-skills:
-- name: ['Building you a','kickass Website']
-  proficiency: 95
-- name: Project Management
-  proficiency: 80
-- name: Copy-writing
-  proficiency: 55
-- name: UI/UX
-  proficiency: 75
-- name: ['Search Engine Optimization','Search Engine Marketing']
-  proficiency: 85
-- name: Dad Jokes
-  proficiency: 70
-- name: Makin' Stuff
-  proficiency: 80
-- name: Software Engineering
-  proficiency: 75
-- name: 3d Modeling
-  proficiency: 60
-- name: Product Photography
-  proficiency: 80
-- name: Radar Charts
-  proficiency: 100
-- name: People Management 
-  proficiency: 75
-- name: Growin' Plants
-  proficiency: 80
-- name: Work Life Balance
-  proficiency: 65
-- name: Jewelry Design 
-  proficiency: 85
-- name: Power Nappin'
-  proficiency: 90
-- name: Home Improvement 
-  proficiency: 40
-- name: Lego Buildin'
-  proficiency: 85
+- label: Building Kickass Websites
+  id : web
+  skills:
+  - name: Website Development
+    proficiency: 95
+  - name: HTML
+    proficiency: 95
+  - name: CSS
+    proficiency: 95
+  - name: PHP
+    proficiency: 90
+  - name: Perl
+    proficiency: 50
+  - name: Ruby
+    proficiency: 50
+  - name: Python
+    proficiency: 60
+  - name: JavaScript
+    proficiency: 66
+  - name: Server Administration
+    proficiency: 85
+  - name: Memes
+    proficiency: 80
+  - name: Copy-writing
+    proficiency: 55
+  - name: UI/UX
+    proficiency: 75
+  - name: SEO / SEM
+    proficiency: 85
+  - name: Product Photography
+    proficiency: 80
+  - name: ['Radar charts','(and other data visualizations)']
+    proficiency: 90
+
+- label: Software Engineering and Architecture
+  id : arch
+  skills:
+  - name: Project Management
+    proficiency: 80
+  - name: Dad Jokes
+    proficiency: 70
+  - name: Makin' Stuff
+    proficiency: 80
+  - name: Software Engineering
+    proficiency: 75
+  - name: 3d Modeling
+    proficiency: 60
+  - name: People Management 
+    proficiency: 75
+  - name: Growin' Plants
+    proficiency: 80
+  - name: Work Life Balance
+    proficiency: 65
+  - name: Jewelry Design 
+    proficiency: 85
+  - name: Power Nappin'
+    proficiency: 90
+  - name: Home Improvement 
+    proficiency: 40
+  - name: Lego Buildin'
+    proficiency: 85
+
+- label: People and Project Management
+  id : people
+  skills:
+  - name: Project Management
+    proficiency: 80
+  - name: Dad Jokes
+    proficiency: 70
+  - name: Makin' Stuff
+    proficiency: 80
+  - name: Software Engineering
+    proficiency: 75
+  - name: 3d Modeling
+    proficiency: 60
+  - name: People Management 
+    proficiency: 75
+  - name: Growin' Plants
+    proficiency: 80
+  - name: Work Life Balance
+    proficiency: 65
+  - name: Jewelry Design 
+    proficiency: 85
+  - name: Power Nappin'
+    proficiency: 90
+  - name: Home Improvement 
+    proficiency: 40
+  - name: Lego Buildin'
+    proficiency: 85
+
+- label: Makin' Stuff
+  id : art
+  skills:
+  - name: Makin' Stuff
+    proficiency: 80
+  - name: 3d Modeling
+    proficiency: 60
+  - name: Manufacturing
+    proficiency: 60
+  - name: Growin' Plants
+    proficiency: 80
+  - name: Jewelry Design 
+    proficiency: 85
+  - name: Home Improvement 
+    proficiency: 40
+  - name: Lego Buildin'
+    proficiency: 85

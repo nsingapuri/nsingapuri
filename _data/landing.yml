@@ -6,18 +6,17 @@
   tpl: about.html
   css:
 
-- id: projects
-  i18n: nav.projects
-  name: Portfolio
-  tpl: projects.html
-  css: project
-  page: casestudy/
-
 - id: skills
   i18n: nav.skills
   name: Proficiencies
   tpl: skills.html
   css: timeline
+
+- id: projects
+  i18n: nav.projects
+  name: Portfolio
+  tpl: projects.html
+  css: project
 
 - id: experience
   i18n: nav.career
