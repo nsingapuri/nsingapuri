@@ -23,107 +23,133 @@
 - label: Building Kickass Websites
   id : web
   skills:
-  - name: Website Development
+  - name: CSS
     proficiency: 95
   - name: HTML
     proficiency: 95
-  - name: CSS
-    proficiency: 95
-  - name: PHP
-    proficiency: 90
-  - name: Perl
-    proficiency: 50
-  - name: Ruby
-    proficiency: 50
-  - name: Python
-    proficiency: 60
   - name: JavaScript
     proficiency: 66
+  - name: Perl
+    proficiency: 50
+  - name: PHP
+    proficiency: 90
+  - name: Python
+    proficiency: 60
+  - name: Ruby
+    proficiency: 50
   - name: Server Administration
     proficiency: 85
-  - name: Memes
-    proficiency: 80
   - name: Copy-writing
     proficiency: 55
+  - name: Graphic Design
+    proficiency: 80
   - name: UI/UX
     proficiency: 75
-  - name: SEO / SEM
-    proficiency: 85
   - name: Product Photography
     proficiency: 80
   - name: ['Radar charts','(and other data visualizations)']
     proficiency: 90
 
+- label: Getting Eyes On Them
+  id : marketing
+  skills:
+  - name: FB Marketing
+    proficiency: 60
+  - name: Google Adwords
+    proficiency: 75
+  - name: Instagram
+    proficiency: 70
+  - name: Pinterest
+    proficiency: 66
+  - name: SEO
+    proficiency: 90
+  - name: Tiktok
+    proficiency: 80
+
 - label: Software Engineering and Architecture
   id : arch
   skills:
-  - name: Project Management
+  - name: Algorithms
     proficiency: 80
-  - name: Dad Jokes
+  - name: C/C++
     proficiency: 70
-  - name: Makin' Stuff
+  - name: Data Structures
+    proficiency: 70
+  - name: Design Patterns
+    proficiency: 50
+  - name: Java
+    proficiency: 70
+  - name: Linux
     proficiency: 80
-  - name: Software Engineering
+  - name: Model View Controller
+    proficiency: 80
+  - name: Object Oriented Programming
     proficiency: 75
-  - name: 3d Modeling
+  - name: Object Relational Model (ORM)
+    proficiency: 75
+  - name: Test Driven Development
     proficiency: 60
-  - name: People Management 
-    proficiency: 75
-  - name: Growin' Plants
-    proficiency: 80
-  - name: Work Life Balance
-    proficiency: 65
-  - name: Jewelry Design 
-    proficiency: 85
-  - name: Power Nappin'
-    proficiency: 90
-  - name: Home Improvement 
-    proficiency: 40
-  - name: Lego Buildin'
-    proficiency: 85
 
 - label: People and Project Management
-  id : people
+  id : papm
   skills:
-  - name: Project Management
+  - name: Agile/SCRUM
     proficiency: 80
-  - name: Dad Jokes
-    proficiency: 70
-  - name: Makin' Stuff
-    proficiency: 80
-  - name: Software Engineering
-    proficiency: 75
-  - name: 3d Modeling
+  - name: Firing
+    proficiency: 33
+  - name: Hiring
+    proficiency: 85
+  - name: Mentoring
     proficiency: 60
   - name: People Management 
     proficiency: 75
-  - name: Growin' Plants
-    proficiency: 80
-  - name: Work Life Balance
-    proficiency: 65
-  - name: Jewelry Design 
+  - name: Project Management
     proficiency: 85
-  - name: Power Nappin'
-    proficiency: 90
-  - name: Home Improvement 
-    proficiency: 40
-  - name: Lego Buildin'
-    proficiency: 85
+  - name: Roadmapping
+    proficiency: 60
 
 - label: Makin' Stuff
   id : art
   skills:
-  - name: Makin' Stuff
-    proficiency: 80
   - name: 3d Modeling
     proficiency: 60
-  - name: Manufacturing
-    proficiency: 60
-  - name: Growin' Plants
+  - name: 3d Printing
     proficiency: 80
-  - name: Jewelry Design 
-    proficiency: 85
+  - name: Ceramics
+    proficiency: 70
+  - name: Dad Jokes
+    proficiency: 90
+  - name: Drawing
+    proficiency: 75
   - name: Home Improvement 
     proficiency: 40
+  - name: Jewelry Design 
+    proficiency: 85
   - name: Lego Buildin'
     proficiency: 85
+  - name: Manufacturing
+    proficiency: 60
+  - name: Memes
+    proficiency: 80
+  - name: Metal Casting
+    proficiency: 90
+  - name: Painting
+    proficiency: 60
+  - name: Woodworking
+    proficiency: 60
+
+- label: Just for Fun
+  id : jff
+  skills:
+  - name: Cooking
+    proficiency: 85
+  - name: Growin' Plants
+    proficiency: 80
+  - name: Power Nappin'
+    proficiency: 90
+  - name: Work Life Balance
+    proficiency: 65
+  - name: Vacationing
+    proficiency: 85
+
+
