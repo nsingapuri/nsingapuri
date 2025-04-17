@@ -29,28 +29,56 @@
     proficiency: 95
   - name: JavaScript
     proficiency: 66
-  - name: Perl
-    proficiency: 50
-  - name: PHP
-    proficiency: 90
-  - name: Python
-    proficiency: 60
-  - name: Ruby
-    proficiency: 50
-  - name: Server Administration
-    proficiency: 85
   - name: Copy-writing
     proficiency: 55
   - name: Graphic Design
     proficiency: 80
+  - name: Hardening
+    proficiency: 85
   - name: UI/UX
     proficiency: 75
   - name: Product Photography
     proficiency: 80
+  - name: Server Administration
+    proficiency: 85
   - name: ['Radar charts','(and other data visualizations)']
     proficiency: 90
+  - name: Having Fun
+    proficiency: 100
 
-- label: Getting Eyes On Them
+- label: Makin' Stuff
+  id : art
+  skills:
+  - name: 3d Modeling
+    proficiency: 60
+  - name: 3d Printing
+    proficiency: 80
+  - name: Ceramics
+    proficiency: 70
+  - name: Drawing
+    proficiency: 75
+  - name: Epoxy
+    proficiency: 65
+  - name: Home Improvement 
+    proficiency: 40
+  - name: Jewelry Design 
+    proficiency: 85
+  - name: Lego Buildin'
+    proficiency: 85
+  - name: Manufacturing
+    proficiency: 60
+  - name: Memes
+    proficiency: 80
+  - name: Metal Casting
+    proficiency: 90
+  - name: Packaging
+    proficiency: 75
+  - name: Painting
+    proficiency: 60
+  - name: Woodworking
+    proficiency: 60
+
+- label: Marketin'
   id : marketing
   skills:
   - name: FB Marketing
@@ -79,14 +107,24 @@
     proficiency: 50
   - name: Java
     proficiency: 70
-  - name: Linux
-    proficiency: 80
   - name: Model View Controller
     proficiency: 80
   - name: Object Oriented Programming
-    proficiency: 75
+    proficiency: 90
   - name: Object Relational Model (ORM)
     proficiency: 75
+  - name: Perl
+    proficiency: 50
+  - name: PHP
+    proficiency: 90
+  - name: Python
+    proficiency: 60
+  - name: Ruby
+    proficiency: 50
+  - name: SQL
+    proficiency: 85
+  - name: Sysadmin (Linux)
+    proficiency: 80
   - name: Test Driven Development
     proficiency: 60
 
@@ -108,48 +146,40 @@
   - name: Roadmapping
     proficiency: 60
 
-- label: Makin' Stuff
-  id : art
-  skills:
-  - name: 3d Modeling
-    proficiency: 60
-  - name: 3d Printing
-    proficiency: 80
-  - name: Ceramics
-    proficiency: 70
-  - name: Dad Jokes
-    proficiency: 90
-  - name: Drawing
-    proficiency: 75
-  - name: Home Improvement 
-    proficiency: 40
-  - name: Jewelry Design 
-    proficiency: 85
-  - name: Lego Buildin'
-    proficiency: 85
-  - name: Manufacturing
-    proficiency: 60
-  - name: Memes
-    proficiency: 80
-  - name: Metal Casting
-    proficiency: 90
-  - name: Painting
-    proficiency: 60
-  - name: Woodworking
-    proficiency: 60
-
-- label: Just for Fun
+- label: Things I Do For Fun
   id : jff
   skills:
+  - name: Chess
+    proficiency: 100
+  - name: Coffee
+    proficiency: 100
   - name: Cooking
-    proficiency: 85
+    proficiency: 100
+  - name: CIV 5
+    proficiency: 100
+  - name: Dad Jokes
+    proficiency: 0
+  - name: Don't Starve
+    proficiency: 100
+  - name: Faster Than Light
+    proficiency: 100
   - name: Growin' Plants
-    proficiency: 80
-  - name: Power Nappin'
-    proficiency: 90
-  - name: Work Life Balance
-    proficiency: 65
-  - name: Vacationing
-    proficiency: 85
-
+    proficiency: 100
+  - name: Half Life
+    proficiency: 100
+  - name: Kerble Space
+    proficiency: 100
+  - name: Left For Dead
+    proficiency: 100
+  - name: Mini Metro
+    proficiency: 100
+  - name: Portal
+    proficiency: 100
+  - name: Power Naps
+    proficiency: 100
+  - name: Unreal Tournament
+    proficiency: 100
+  - name: Vacations
+    proficiency: 100
+    
 

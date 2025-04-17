@@ -28,7 +28,7 @@
                 {% endfor %}
             {% endcapture %}
             <div class="wow zoomIn col-lg-6">
-                <h2 class="text-center" style="margin-top: 2em;">{{ skillset.label }}</h2>
+                <h2 class="text-center permanent-marker-regular" style="margin-top: 2em; font-weight: bold;">{{ skillset.label }}</h2>
                 <canvas id="{{ skillset.id }}" height="500" width="1000"></canvas>
             </div>
 
@@ -57,6 +57,7 @@
                             responsive: true,
                             ticks: {min: 0, max: 100},
                             lineArc: false,
+                            pointLabels: {fontSize: 14},
                         },
                         legend: {display: false},
                     }
