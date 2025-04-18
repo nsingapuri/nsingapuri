@@ -19,6 +19,23 @@ cp('-f', 'node_modules/font-mfizz/dist/font-mfizz.svg', 'static/assets/');
 cp('-f', 'node_modules/font-mfizz/dist/font-mfizz.ttf', 'static/assets/');
 cp('-f', 'node_modules/font-mfizz/dist/font-mfizz.woff', 'static/assets/');
 
+mkdir('-p', 'static/assets/webfonts/');
+cp('-f', 'node_modules/components-font-awesome/webfonts/fa-brands-400.eot', 'static/assets/webfonts/');
+cp('-f', 'node_modules/components-font-awesome/webfonts/fa-brands-400.svg', 'static/assets/webfonts/');
+cp('-f', 'node_modules/components-font-awesome/webfonts/fa-brands-400.ttf', 'static/assets/webfonts/');
+cp('-f', 'node_modules/components-font-awesome/webfonts/fa-brands-400.woff', 'static/assets/webfonts/');
+cp('-f', 'node_modules/components-font-awesome/webfonts/fa-brands-400.woff2', 'static/assets/webfonts/');
+cp('-f', 'node_modules/components-font-awesome/webfonts/fa-regular-400.eot', 'static/assets/webfonts/');
+cp('-f', 'node_modules/components-font-awesome/webfonts/fa-regular-400.svg', 'static/assets/webfonts/');
+cp('-f', 'node_modules/components-font-awesome/webfonts/fa-regular-400.ttf', 'static/assets/webfonts/');
+cp('-f', 'node_modules/components-font-awesome/webfonts/fa-regular-400.woff', 'static/assets/webfonts/');
+cp('-f', 'node_modules/components-font-awesome/webfonts/fa-regular-400.woff2', 'static/assets/webfonts/');
+cp('-f', 'node_modules/components-font-awesome/webfonts/fa-solid-900.eot', 'static/assets/webfonts/');
+cp('-f', 'node_modules/components-font-awesome/webfonts/fa-solid-900.svg', 'static/assets/webfonts/');
+cp('-f', 'node_modules/components-font-awesome/webfonts/fa-solid-900.ttf', 'static/assets/webfonts/');
+cp('-f', 'node_modules/components-font-awesome/webfonts/fa-solid-900.woff', 'static/assets/webfonts/');
+cp('-f', 'node_modules/components-font-awesome/webfonts/fa-solid-900.woff2', 'static/assets/webfonts/');
+
 // change link/src files to new file path
 sed('-i', /(.*)[0-9]{8}(.*)/, '$1' + nowDateStr + '$2', '_includes/index_head.html');
 sed('-i', /(.*)[0-9]{8}(.*)/, '$1' + nowDateStr + '$2', '_includes/head.html');

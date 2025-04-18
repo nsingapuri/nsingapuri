@@ -22,21 +22,21 @@
 
                 <li style="font-size: 16px; padding: .25em 0;"><a href="tel:{{ site.author.phone }}"><i class="fa fa-phone"></i> {{ site.author.phone }}</a></li>
                 {% if site.author.email %}
-                <li style="font-size: 16px; padding: .25em 0;"><a href="mailto:{{ site.author.email }}"><i class="fa fa-envelope-o"></i> {{ site.author.email }}</a></li>
+                <li style="font-size: 16px; padding: .25em 0;"><a href="mailto:{{ site.author.email }}"><i class="fas fa-envelope-open-text"></i> {{ site.author.email }}</a></li>
                 {% endif %}
-                <li style="font-size: 16px; padding: .25em 0;"><i class="fa fa-location-dot"></i> {{ site.author.address }}</li>
+                <li style="font-size: 16px; padding: .25em 0;"><i class="fas fa-map-marker-alt"></i> {{ site.author.address }}</li>
             </ul>
 
             <h2 class="space-mono-bold" style="margin-top: 3em;">Follow Me?</h2>
             <ul class="list-inline social-icon">
                 {% if site.author.github_username %}
-                <li><a href="https://github.com/{{ site.author.github_username }}" aria-label="github" target="blank"><i class="fa fa-github"></i></a></li>
+                <li><a href="https://github.com/{{ site.author.github_username }}" aria-label="github" target="blank"><i class="fab fa-github"></i></a></li>
                 {% endif %}
                 {% if site.author.linkedin_id %}
-                <li><a href="https://www.linkedin.com/in/{{ site.author.linkedin_id }}" aria-label="linkedin"  target="blank"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/{{ site.author.linkedin_id }}" aria-label="linkedin"  target="blank"><i class="fab fa-linkedin"></i></a></li>
                 {% endif %}
                 {% if site.author.facebook_username %}
-                <li><a href="https://www.facebook.com/{{ site.author.facebook_username }}" aria-label="facebook"  target="blank"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://www.facebook.com/{{ site.author.facebook_username }}" aria-label="facebook"  target="blank"><i class="fab fa-facebook"></i></a></li>
                 {% endif %}
                 {% if site.author.twitter_username %}
                 <li><a href="https://twitter.com/{{ site.author.twitter_username }}" aria-label="twitter"  target="blank"><i class="fa fa-twitter"></i></a></li>

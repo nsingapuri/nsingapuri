@@ -2,7 +2,7 @@
 # if you don't have language feature(language.yml is empty), ignore "i18n" items
 
 - experience:
-  icon: fa-plus-square
+  icon: fa fa-plus-square
   align: left
   employer:
     name: Self-Employed
@@ -20,7 +20,7 @@
   title: "My \"Mayor of PlantyTown\" Era"
 
 - experience:
-  icon: fa-sign-hanging
+  icon: fas fa-sign
   align: left
   employer:
     name: RealPage Inc.
@@ -39,7 +39,7 @@
   title: "are we having fun yet?"
 
 - experience:
-  icon: fa-plus-square
+  icon: fa fa-plus-square
   align: left
   employer:
     name: IBM
@@ -59,7 +59,7 @@
 
 
 - experience:
-  icon: fa-plus-square
+  icon: fa fa-plus-square
   align: left
   employer:
     name: SoftLayer
@@ -78,7 +78,7 @@
   title: "...this tracks"
 
 - experience:
-  icon: fa-plus-square
+  icon: fa fa-plus-square
   align: left
   employer:
     name: Speed Commerce
@@ -97,7 +97,7 @@
   title: "...this also tracks"
 
 - experience:
-  icon: fa-plus-square
+  icon: fa fa-plus-square
   align: left
   employer:
     name: Next Prodigy Inc.
@@ -116,7 +116,7 @@
   title: "team building"
 
 - experience:
-  icon: fa-plus-square
+  icon: fa fa-plus-square
   align: left
   employer:
     name: Native Sun Communications
@@ -135,7 +135,7 @@
   title: "work doesn't feel like work, when you are having fun"
 
 - experience:
-  icon: fa-school
+  icon: fa fa-school
   align: left
   employer:
     name: University of Denver
