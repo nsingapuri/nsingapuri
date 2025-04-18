@@ -1,187 +1,160 @@
 # skills section data
 
-# label: Ability
-# id : cs
-# aspects: GitHub, Motivation, HTML5, ReactJS, Machine Learing, Python, Sleeping
-# percentage: 100, 35, 65, 80, 70, 90, 50
-
-# label: People and Project Management
-# id : cs
-# aspects: Agile, Hiring, Mentoring, Project Management, Roadmapping
-# percentage: 60, 80, 75, 65, 75, 70
-
-# label: Architecture
-# id : cs
-# aspects: Algorithms, Data Structures, Design Patterns, MVC, OO, ORM, TDD
-# percentage: 80, 60, 40, 80, 80, 60, 60
-
-# label: Software Engineering
-# id : cs
-# aspects: Software Engineering, Makin' Stuff, 3d Modeling, People Management, Project Management, Growin' Plants, Jewelry Design, Web Design, Power Naps, Home Improvement, SEO/SEM, Legos, Dad Jokes
-# percentage: 75, 65, 50, 85, 70, 90, 80, 70, 95, 33, 90, 95, 100
-
 - label: Building Kickass Websites
   id : web
   skills:
   - name: CSS
-    proficiency: 95
+    proficiency: 9.5
   - name: HTML
-    proficiency: 95
+    proficiency: 9.5
   - name: JavaScript
-    proficiency: 66
+    proficiency: 6.6
   - name: Copy-writing
-    proficiency: 55
+    proficiency: 5.5
   - name: Graphic Design
-    proficiency: 80
+    proficiency: 8.0
   - name: Hardening
-    proficiency: 85
+    proficiency: 8.5
   - name: UI/UX
-    proficiency: 75
+    proficiency: 7.5
   - name: Product Photography
-    proficiency: 80
-  - name: ['Radar charts','(and other data visualizations)']
-    proficiency: 90
+    proficiency: 8.0
+  - name: ['Radar charts','(data visualizations)']
+    proficiency: 9.0
   - name: Server Administration
-    proficiency: 85
+    proficiency: 8.5
 
-- img : "/static/assets/img/landing/brain1.png"
-  top: 2em
-
-- label: Makin' Stuff
-  id : art
+- label: Having Fun
+  id : jff
   skills:
-  - name: 3d Modeling
-    proficiency: 60
-  - name: 3d Printing
-    proficiency: 80
-  - name: Epoxy
-    proficiency: 65
-  - name: Home Improvement 
-    proficiency: 40
-  - name: Jewelry Design 
-    proficiency: 85
-  - name: Lego Buildin'
-    proficiency: 85
-  - name: Manufacturing
-    proficiency: 60
-  - name: Memes
-    proficiency: 80
-  - name: Metal Casting
-    proficiency: 90
-  - name: Packaging
-    proficiency: 75
-  - name: Woodworking
-    proficiency: 60
+  - name: Ceramics
+    proficiency: 10
+  - name: Cooking
+    proficiency: 10
+  - name: CIV 5
+    proficiency: 10
+  - name: Dad Jokes
+    proficiency: 0
+  - name: Drawing
+    proficiency: 10
+  - name: Don't Starve
+    proficiency: 10
+  - name: Plants
+    proficiency: 10
+  - name: Kerble Space
+    proficiency: 10
+  - name: Power Naps
+    proficiency: 10
+  - name: Reading
+    proficiency: 10
+  - name: Travel
+    proficiency: 10
+  - name: Vinyl Records
+    proficiency: 10
 
 - label: Marketin'
   id : marketing
   skills:
   - name: FB Marketing
-    proficiency: 60
+    proficiency: 6.0
   - name: Google Adwords
-    proficiency: 75
+    proficiency: 7.5
   - name: Instagram
-    proficiency: 70
+    proficiency: 7.0
   - name: Pinterest
-    proficiency: 66
+    proficiency: 6.6
   - name: SEO
-    proficiency: 90
+    proficiency: 9.0
   - name: Tiktok
-    proficiency: 80
+    proficiency: 8.0
+
+- img : "/static/assets/img/landing/brain1.png"
+  top: 2em
+
+- img : "/static/assets/img/landing/brain5.png"
+  top: 4em
 
 - label: Software Engineering
   id : arch
   skills:
   - name: Algorithms
-    proficiency: 80
+    proficiency: 8.0
   - name: Bash
-    proficiency: 75
+    proficiency: 7.5
   - name: C/C++
-    proficiency: 70
+    proficiency: 7.0
   - name: Data Structures
-    proficiency: 70
+    proficiency: 7.0
   - name: Design Patterns
-    proficiency: 50
+    proficiency: 5.0
   - name: Java
-    proficiency: 70
-  - name: Model View Controller
-    proficiency: 80
+    proficiency: 7.0
+  - name: MVC
+    proficiency: 8.0
   - name: OOP
-    proficiency: 90
+    proficiency: 9.0
   - name: ORM
-    proficiency: 75
+    proficiency: 7.5
   - name: Perl
-    proficiency: 50
+    proficiency: 5.0
   - name: PHP
-    proficiency: 90
+    proficiency: 9.0
   - name: Python
-    proficiency: 60
+    proficiency: 6.0
   - name: Ruby
-    proficiency: 50
+    proficiency: 5.0
   - name: SQL
-    proficiency: 85
+    proficiency: 8.5
   - name: Sysadmin (Linux)
-    proficiency: 80
+    proficiency: 8.0
   - name: Test Driven Development
-    proficiency: 60
+    proficiency: 6.0
+
+
+
+- label: Makin' Stuff
+  id : art
+  skills:
+  - name: 3d Modeling
+    proficiency: 6.0
+  - name: 3d Printing
+    proficiency: 8.0
+  - name: Epoxy
+    proficiency: 6.5
+  - name: Home Improvement 
+    proficiency: 4.0
+  - name: Jewelry Design 
+    proficiency: 8.5
+  - name: Lego Buildin'
+    proficiency: 8.5
+  - name: Manufacturing
+    proficiency: 6.0
+  - name: Memes
+    proficiency: 8.0
+  - name: Metal Casting
+    proficiency: 9.0
+  - name: Packaging
+    proficiency: 7.5
+  - name: Woodworking
+    proficiency: 6.0
 
 - label: Team Building
   id : papm
   skills:
   - name: Agile/SCRUM
-    proficiency: 80
+    proficiency: 8.0
   - name: Firing
-    proficiency: 33
+    proficiency: 4.0
   - name: Hiring
-    proficiency: 85
+    proficiency: 8.5
   - name: Mentoring
-    proficiency: 60
+    proficiency: 6.0
   - name: People Management 
-    proficiency: 75
+    proficiency: 7.5
   - name: Project Management
-    proficiency: 85
+    proficiency: 8.5
   - name: Roadmapping
-    proficiency: 60
-
-- img : "/static/assets/img/landing/brain5.png"
-  top: 4em
-
-- label: Things I Do For Fun
-  id : jff
-  skills:
-  - name: Ceramics
-    proficiency: 100
-  - name: Chess
-    proficiency: 100
-  - name: Cooking
-    proficiency: 100
-  - name: CIV 5 (and not 6)
-    proficiency: 100
-  - name: Dad Jokes
-    proficiency: 0
-  - name: Drawing
-    proficiency: 100
-  - name: Don't Starve
-    proficiency: 100
-  - name: Faster Than Light
-    proficiency: 100
-  - name: Growin' Plants
-    proficiency: 100
-  - name: Kerble Space
-    proficiency: 100
-  - name: Mini Metro
-    proficiency: 100
-  - name: Painting
-    proficiency: 100
-  - name: Power Naps
-    proficiency: 100
-  - name: Reading
-    proficiency: 100
-  - name: Travel
-    proficiency: 100
-  - name: Unreal Tournament
-    proficiency: 100
+    proficiency: 6.0
 
 
-    
 

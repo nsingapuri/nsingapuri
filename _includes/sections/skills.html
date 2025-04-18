@@ -47,7 +47,7 @@
                     var data = {
                       labels: [{{ skillNames | strip }}],
                       datasets: [{
-                        label: 'Nalin',
+                        label: 'Proficiency',
                         data: [{{ skillValues | strip | join ', '}}],
                         fill: true,
                         backgroundColor: 'rgba(255, 100, 0, 0.2)',
@@ -62,13 +62,23 @@
                         type: 'radar',
                         data: data,
                         options: {
-                            scale: {
-                                responsive: true,
-                                ticks: {min: 0, max: 100},
-                                lineArc: false,
-                                pointLabels: {fontSize: 14},
+                            plugins: {
+                                legend: {
+                                    display: false
+                                }
                             },
-                            legend: {display: false},
+                            scales: {
+                                r: {
+                                    angleLines: {
+                                        display: false
+                                    },
+                                    min: 0,
+                                    max: 10,
+                                    ticks: {
+                                        stepSize: 2
+                                    }
+                                }
+                            }
                         }
                     });
                 </script>

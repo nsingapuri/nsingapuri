@@ -2,7 +2,7 @@
 # Add items for each banner image in the carousel
 #
 # Images are expected to be located in `static/assets/img/`.
-- src: landing/banner12.png
+- src: landing/banner12.jpg
   title: a brief overview of my process
 
 # - src: landing/banner8.jpg
