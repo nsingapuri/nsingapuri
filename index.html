@@ -4,57 +4,98 @@ title: index
 permalink: /
 
 case_studies_max: 2
+career_max: 4
+
 sitemap:
   priority: 1
 
 ---
+<div>
 
-<div class="navbar-wrapper">
-  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  {% if site.index_carousel %}
+    <div class="container-fluid">
+      {% include carousel.html %}
+    </div>
+  {% endif %}
+
+  <nav class="navbar navbar-light sticky-top navbar-expand-md" aria-label="navbar">
     <div class="container">
-      <div class="navbar-header page-scroll">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#page-top" id="i18_title"><span data-i18n="website.navtitle">{{ site.navtitle }}</span></a>
-      </div>
-      <div id="navbar" class="navbar-collapse collapse">
-        <ul class="nav navbar-nav navbar-right" id="i18_navbar">
-          <li>
-          </li>
-          {% for section in site.data.landing %}
-          <li>
-            {% if section.page %}
-              <a class="page-scroll" href="{{ section.page}} ">
-            {% else %}
-              <a class="page-scroll" href="{{ section.id | prepend: '#'}} ">
-            {% endif %}
-              <span data-i18n="{{ section.i18n }}">{{ section.name }}</span>
-            </a>
-          </li>
-          {% endfor %}
-          {% for language in site.data.index.language %}
-          <li>
-            <a id="set_lang_{{ language.locale }}" class="btn btn-sm set_{{ language.locale }}" data-locale="{{ language.locale }}">
-              <img src="{{ language.flag | prepend: site.baseurl }}" height="16" width="16">
-            </a>
-          </li>
-          {% endfor %}
+      <a class="navbar-brand" href="#"><span data-i18n="website.navtitle">{{ site.navtitle }}</span></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+        <ul class="navbar-nav">
+        {% for section in site.data.landing %}
+          {% assign sectionLink = section.id | prepend: '#' %}
+          {% if section.links %}
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink{{ section.id }}" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span data-i18n="{{ section.i18n }}">
+                  {{ section.name }}
+                </span>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink{{ section.id }}">
+              {% assign sectionLink = section.id | prepend: '#' %}
+              <a class="dropdown-item" href="{{ sectionLink }}">at a glance</a>
+              {% for link in section.links %}
+                <a class="dropdown-item" href="{{ link.url }}">{{ link.name }}</a>
+              {% endfor %}
+              </div>
+            </li>
+          {% else %}
+            {% assign sectionLink = section.id | prepend: '#' %}
+            <li class="nav-item">
+              <a class="nav-link" href="{{ sectionLink }}">
+                  <span data-i18n="{{ section.i18n }}">
+                    {{ section.name }}
+                  </span>
+              </a>
+            </li>
+          {% endif %}
+        {% endfor %}          
         </ul>
       </div>
     </div>
   </nav>
-</div>
-{% if site.index_carousel %}
-{% include carousel.html %}
-{% endif %}
 
-{% for section in site.data.landing %}
-{% assign loopindex = forloop.index | modulo: 2 %}
-<section id="{{ section.id }}" class="features {% if loopindex != 1 %} gray-section {% endif %} {{ section.css }}" style="margin-top: 0;">
-  {% include sections/{{section.tpl}} %}
-</section>
-{% endfor %}
+  {% for section in site.data.landing %}
+    {% assign loopindex = forloop.index | modulo: 2 %}
+    <div id="{{ section.id }}" class="features {% if loopindex != 1 %} gray-section {% endif %} {{ section.css }}" style="margin-top: 0;">
+          {% include sections/{{section.tpl}} %}
+    </div>
+  {% endfor %}
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+
+        $('a.page-scroll').bind('click', function(event) {
+            var link = $(this);
+            $('html, body').stop().animate({
+                scrollTop: $(link.attr('href')).offset().top - 50
+            }, 500);
+            event.preventDefault();
+            $("#navbar").collapse('hide');
+        });
+    });
+
+    var cbpAnimatedHeader = (function() {
+        var changeHeaderOn = 200, scrollDebounce = 250;
+
+        function scrollPage() {
+          $('.navbar').toggleClass('navbar-scroll', scrollY() >= changeHeaderOn);
+        }
+
+        function scrollY() {
+          return window.pageYOffset || document.documentElement.scrollTop;
+        }
+
+        window.addEventListener('scroll', function() { setTimeout(scrollPage, scrollDebounce); }, false);
+    })();
+
+    new WOW().init();
+
+    $('body').scrollspy({ target: '.navbar' })  
+  </script>
+</div>

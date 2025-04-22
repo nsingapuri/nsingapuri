@@ -6,23 +6,35 @@
   tpl: about.html
   css:
 
+- id: casestudies
+  i18n: nav.projects
+  name: Case Studies
+  tpl: projects.html
+  css: project
+  links:
+    - name: ecommerce
+      url: casestudy
+    - name: service
+      url: casestudy
+    - name: shopify
+      url: casestudy
+    - name: all case studies
+      url: casestudy
+
 - id: skills
   i18n: nav.skills
   name: Proficiencies
   tpl: skills.html
   css: timeline
 
-- id: projects
-  i18n: nav.projects
-  name: Portfolio
-  tpl: projects.html
-  css: project
-
 - id: experience
   i18n: nav.career
   name: Career
   tpl: career.html
   css: timeline
+  links:
+    - name: resume
+      url: /static/assets/nalin.singapuri.resume.2025-02.pdf
 
 # - id: blog
 #   i18n: nav.blog

@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<div class="intro">
+<div id="casestudy" class="intro">
   <div class="container">
     <h1 class="text-center">{{ page.h1title }}</h1>
     <h2 class="text-center">{{ page.h2title }}</h2>
@@ -25,7 +25,7 @@ layout: default
             <div class="team-member">
                 <div>
                     <div style="width:62%; margin: 0 auto;">
-                      <img src="{{ page.logo | prepend: site.baseurl }}" class="img-responsive" alt="">
+                      <img src="{{ page.logo | prepend: site.baseurl }}" class="img-fluid" alt="">
                     </div>
                     <h4>
                     {% if page.websiteUrl %}
@@ -47,7 +47,7 @@ layout: default
                     {% if page.social %}
                     <ul class="list-inline social-icon">
                     {% for link in page.social %}
-                        <li>
+                        <li class="list-inline-item">
                         {% case link.site %}
                           {% when "facebook" %}
                             <a href="https://www.facebook.com/{{ link.handle }}" target="blank">
@@ -97,7 +97,7 @@ layout: default
 
       {% if page.intro_image %}
       <div class="col-12 col-md-5 col-lg-6 order-1 order-md-2 position-relative">
-        <img alt="{{ page.navtitle }}" class="img-responsive intro-image{% if page.intro_image_absolute %} intro-image-absolute{% endif %}{% if page.intro_image_hide_on_mobile %} intro-image-hide-mobile{% endif %}" src="{{ page.intro_image | relative_url }}" />
+        <img alt="{{ page.navtitle }}" class="img-fluid intro-image{% if page.intro_image_absolute %} intro-image-absolute{% endif %}{% if page.intro_image_hide_on_mobile %} intro-image-hide-mobile{% endif %}" src="{{ page.intro_image | relative_url }}" />
       </div>
       {% endif %}
     </div>

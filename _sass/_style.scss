@@ -3,6 +3,7 @@ $primary: #ff6400;
 $primary-dark: #8047ff;
 $secondary: #2fa1d6;
 $black: #676a6c;
+
 /*
 $black: #2f2f41;
 $white: #ffffff;
@@ -26,9 +27,11 @@ a:hover {
   content: "E";
   color: #AAA;
 }
+
 h1 #nalin, h1 #singapuri {
   color: $primary-dark;
 }
+
 h1:hover #nalin, h1:hover #singapuri {
   color: $black;
 }
@@ -37,9 +40,14 @@ h1:hover #nalin::before  {
   content: "ADRE";
   color: #DDD;
 }
+
 h1:hover #nalin::after {
   content: "E";
   color: #DDD;
+}
+
+.navbar {
+  padding: 0 5em;
 }
 
 .permanent-marker-regular {
@@ -52,31 +60,44 @@ h1:hover #nalin::after {
   min-width: 62%;
 }
 
-/*
-.space-mono-regular {
-  font-family: "Space Mono", monospace;
-  font-weight: 400;
-  font-style: normal;
+.navbar .navbar-toggle .icon-bar {
+    background-color: #888;
 }
 
-.space-mono-bold {
-  font-family: "Space Mono", monospace;
-  font-weight: 700;
-  font-style: normal;
+.container-fluid {
+  padding : 0;
 }
 
-.space-mono-regular-italic {
-  font-family: "Space Mono", monospace;
-  font-weight: 400;
-  font-style: italic;
+.navbar .active {
+  color: $primary !important;
 }
 
-.space-mono-bold-italic {
-  font-family: "Space Mono", monospace;
-  font-weight: 700;
-  font-style: italic;
+#web_wrapper:after {
+  content: "";
+  width: 40%;
+  height: 40%;
+
+  background-image: url("../assets/img/landing/yah.png");
+  background-position: bottom right;
+  background-size: 100%;
+  background-repeat: no-repeat;
+
+  position: absolute;
+  display: inline-block;
+  bottom: 5%;
+  right: -15%;
 }
-*/
+
+#i18_about_me, #i18_projects, #i18_skills {
+  border-bottom: 3px solid $primary;
+}
+#i18_projects, #i18_skills, #i18_career {
+  border-top: 3px solid $primary;
+}
+
+#about-me {
+
+}
 
 .landing-page .carousel-caption {
   h1, p {
@@ -88,20 +109,27 @@ button.dim {
   text-transform: uppercase;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3 {
+  margin: 1em 0;
   font-weight: 100;
 }
 
+h3, h4, h5 {
+  margin-top: 5px;
+  font-weight: 600;
+}
+
+
 h1, .h1_annotation {
-  font-size: 30px;
+  font-size: 64px;
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 40px;
 }
 
 h3 {
-  font-size: 16px;
+  font-size: 24px;
 }
 
 h4 {
@@ -114,11 +142,6 @@ h5 {
 
 h6 {
   font-size: 10px;
-}
-
-h3, h4, h5 {
-  margin-top: 5px;
-  font-weight: 600;
 }
 
 .nav {
@@ -1305,7 +1328,7 @@ label.error {
 body {
   font-family: "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: #2f4050;
-  font-size: 13px;
+  font-size: 16px;
   color: $black;
   height: 100%;
 }
@@ -2487,17 +2510,16 @@ body {
       padding-left: 15px;
     }
   }
-  .navbar-default {
+  .navbar {
     &.navbar-scroll {
-      background-color: #fff;
+      background-color: #ffffff;
       border-color: #fff;
-      padding: 15px 0;
+      padding: 0 5em;
     }
     background-color: transparent;
     border-color: transparent;
     transition: all .3s ease-in-out 0s;
-    .nav li a {
-      color: #fff;
+    li a {
       font-family: 'Open Sans', helvetica, arial, sans-serif;
       font-weight: 700;
       letter-spacing: 1px;
@@ -2506,18 +2528,17 @@ body {
     }
   }
   .navbar-nav > li > a {
-    padding-top: 25px;
     border-top: 6px solid transparent;
   }
-  .navbar-default {
+  .navbar {
     .navbar-nav > {
       .active > a {
         background: 0 0;
-        color: #fff;
+        color: $primary;
         border-top: 6px solid $primary;
         &:hover {
           background: 0 0;
-          color: #fff;
+          color: $primary;
           border-top: 6px solid $primary;
         }
       }
@@ -2552,15 +2573,13 @@ body {
       transition: all .3s ease-in-out 0s;
     }
   }
-  .navbar-scroll.navbar-default .nav li a {
+  .navbar-scroll li a.nav-link {
     color: $black;
     &:hover {
       color: $primary;
     }
   }
   .navbar-wrapper .navbar.navbar-scroll {
-    padding-top: 0;
-    padding-bottom: 0;
     border-bottom: 1px solid #e7eaec;
     border-radius: 0;
   }
@@ -2570,24 +2589,15 @@ body {
       background: inherit;
     }
     > a {
-      padding: 25px 10px 15px;
     }
   }
   .navbar-scroll .navbar-nav > li > a {
-    padding: 20px 10px;
   }
   .navbar-fixed-top {
     border: none !important;
     &.navbar-scroll {
       border-bottom: 1px solid #e7eaec !important;
     }
-  }
-  .navbar.navbar-scroll .navbar-brand {
-    margin-top: 15px;
-    border-radius: 5px;
-    font-size: 12px;
-    padding: 10px;
-    height: auto;
   }
   .header-back {
     height: 100%;
@@ -2713,9 +2723,11 @@ body {
   .social-icon a {
     background: $primary;
     color: #fff;
-    padding: 4px 8px;
-    height: 28px;
-    width: 28px;
+    padding: 0;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    font-size: 24px;
     display: block;
     border-radius: 50px;
     &:hover {
@@ -2824,6 +2836,9 @@ body {
 }
 
 @media (max-width: 768px) {
+  .landing-page .navbar.navbar-scroll {
+    padding: 0 5px 0 15px;
+  }
   .landing-page {
     .carousel-caption {
       left: 5%;
@@ -2836,17 +2851,22 @@ body {
         font-size: 28px;
       }
     }
-    .navbar.navbar-scroll .navbar-brand {
-      margin-top: 6px;
-    }
-    .navbar-default {
+    .navbar {
       background-color: transparent;
       border-color: #fff;
-      padding: 15px 0;
+      padding: 0 0;
       .navbar-nav > .active > a:focus {
         background: 0 0;
         color: inherit;
       }
+
+      .navbar-scroll {
+        padding: 0;
+        .navbar-nav > li > a {
+          padding: 0;
+        }
+      }
+
       .nav li a {
         color: $black;
         &:hover {
@@ -2855,17 +2875,12 @@ body {
       }
     }
     .navbar-wrapper .navbar {
-      padding-top: 0;
-      padding-bottom: 5px;
       border-bottom: 1px solid #e7eaec;
       border-radius: 0;
     }
     .nav > li > a {
-      padding: 25px 10px 15px;
+      padding: 0;
       background-color: #dadada;
-    }
-    .navbar-nav > li > a {
-      padding: 20px 10px;
     }
     .navbar .navbar-brand {
       margin-top: 6px;
@@ -2874,7 +2889,7 @@ body {
       padding: 10px;
       height: auto;
     }
-    .navbar-wrapper .navbar {
+    .navbar {
       padding-left: 15px;
       padding-right: 5px;
     }
@@ -2891,7 +2906,7 @@ body {
       display: block;
       float: none;
       .navbar-toggle {
-        background-color: #fff;
+        background-color: #EEE;
         padding: 9px 10px;
         border: none;
       }

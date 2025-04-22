@@ -1,10 +1,11 @@
-<div class="container">
+<div class="container" id="i18_skills">
     <div class="row">
-        <div class="col-lg-12 text-center" id="i18_skills">
+        <div class="col-lg-12 text-center">
             <div class="navy-line"></div>
             <h2 style="font-size: 250%;"><span data-i18n="skills.my_skills">My Proficiencies</span></h2>
         </div>
     </div>
+
     <div class="row features-block" style="margin: 2em;">
         {% for skillset in site.data.index.skills %}
             {% assign loopindex = forloop.index | modulo: 2 %}
@@ -30,14 +31,15 @@
 
 
             {% if skillset.img AND skillset.img != "" %}
-                <div class="wow zoomIn col-md-6 text-center">
-                    <div style="width:50%; margin: {{skillset.top}} auto 0;"><img src="{{ skillset.img | prepend: site.baseurl }}" class="img-responsive"/></div>
+                <div class="wow zoomIn col-md-6 text-center d-none d-md-block">
+                    <h2 class="text-center" style="margin: 2em 0 0 0; font-weight: bold;">&nbsp;</h2>
+                    <div class="align-middle" style="width:50%; margin: {{skillset.top}} auto 0;"><img src="{{ skillset.img | prepend: site.baseurl }}" class="img-fluid"/></div>
                 </div>
                 {% if loopindex == 0 %}<br style="clear: both;">{% endif %}
             {% else %}
-                <div class="col-md-6">
-                    <h2 class="text-center permanent-marker-regular" style="margin-top: 2em; font-weight: bold;">{{ skillset.label }}</h2>
-                    <canvas id="{{ skillset.id }}" height="500" width="1000"></canvas>
+                <div class="graph col-md-6" id="{{ skillset.id }}_wrapper" >
+                    <h2 class="text-center" style="margin: 2em 0 0 0; font-weight: bold;">{{ skillset.label }}</h2>
+                    <canvas style="margin: 0; padding: 0" id="{{ skillset.id }}" height="500" width="1000"></canvas>
                 </div>
 
 
@@ -62,6 +64,9 @@
                         type: 'radar',
                         data: data,
                         options: {
+                            layout: {
+                                padding: 0
+                            },
                             plugins: {
                                 legend: {
                                     display: false

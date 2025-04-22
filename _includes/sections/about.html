@@ -8,10 +8,10 @@
     </div>
     <div class="row">
         <div class="col-sm-6 text-center">
-            <h2 class="space-mono-bold">About</h2>
+            <h2 class="space-mono-bold">At a Glance</h2>
             <p><span data-i18n="about_me.des">{{ site.author.desc }}</span></p>
             <p><span data-i18n="about_me.des">{{ site.author.longdesc }}</span></p>
-            <img src="{{ '/static/assets/img/landing/websitedesign.png' | prepend: site.baseurl }}" class="img-responsive"/>
+            <img src="{{ '/static/assets/img/landing/websitedesign.png' | prepend: site.baseurl }}" class="img-fluid"/>
         </div>
         <div class="col-sm-6 text-center">
             <h2 class="space-mono-bold">Get In Touch</h2>
@@ -27,23 +27,23 @@
                 <li style="font-size: 16px; padding: .25em 0;"><i class="fas fa-map-marker-alt"></i> {{ site.author.address }}</li>
             </ul>
 
-            <h2 class="space-mono-bold" style="margin-top: 3em;">Follow Me?</h2>
+            <h2 class="space-mono-bold" style="margin-top: 3em;">Follow Me:</h2>
             <ul class="list-inline social-icon">
                 {% if site.author.github_username %}
-                <li><a href="https://github.com/{{ site.author.github_username }}" aria-label="github" target="blank"><i class="fab fa-github"></i></a></li>
+                <li class="list-inline-item"><a href="https://github.com/{{ site.author.github_username }}" aria-label="github" target="blank"><i class="fab fa-github"></i></a></li>
                 {% endif %}
                 {% if site.author.linkedin_id %}
-                <li><a href="https://www.linkedin.com/in/{{ site.author.linkedin_id }}" aria-label="linkedin"  target="blank"><i class="fab fa-linkedin"></i></a></li>
+                <li class="list-inline-item"><a href="https://www.linkedin.com/in/{{ site.author.linkedin_id }}" aria-label="linkedin"  target="blank"><i class="fab fa-linkedin"></i></a></li>
                 {% endif %}
                 {% if site.author.facebook_username %}
-                <li><a href="https://www.facebook.com/{{ site.author.facebook_username }}" aria-label="facebook"  target="blank"><i class="fab fa-facebook"></i></a></li>
+                <li class="list-inline-item"><a href="https://www.facebook.com/{{ site.author.facebook_username }}" aria-label="facebook"  target="blank"><i class="fab fa-facebook"></i></a></li>
                 {% endif %}
                 {% if site.author.twitter_username %}
-                <li><a href="https://twitter.com/{{ site.author.twitter_username }}" aria-label="twitter"  target="blank"><i class="fa fa-twitter"></i></a></li>
+                <li class="list-inline-item"><a href="https://twitter.com/{{ site.author.twitter_username }}" aria-label="twitter"  target="blank"><i class="fa fa-twitter"></i></a></li>
                 {% endif %}
-                <li><a href="{{ site.baseurl }}/feed.xml" target="blank" aria-label="rss" ><i class="fa fa-rss"></i></a></li>
+                <li class="list-inline-item"><a href="{{ site.baseurl }}/feed.xml" target="blank" aria-label="rss" ><i class="fa fa-rss"></i></a></li>
                 {% if site.author.cv %}
-                <li><a href="{{ site.author.cv }}" target="blank" aria-label="resume"><i class="fa fa-file-pdf-o"></i></a></li>
+                <li class="list-inline-item"><a href="{{ site.author.cv }}" target="blank" aria-label="resume"><i class="fa fa-file-pdf-o"></i></a></li>
                 {% endif %}
             </ul>
         </div> 

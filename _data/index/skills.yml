@@ -1,78 +1,80 @@
 # skills section data
 
-- label: Building Kickass Websites
+- label: Building Kick-ass Websites
   id : web
   skills:
-  - name: CSS
-    proficiency: 9.5
   - name: HTML
     proficiency: 9.5
-  - name: JavaScript
-    proficiency: 6.6
-  - name: Copy-writing
-    proficiency: 5.5
-  - name: Graphic Design
-    proficiency: 8.0
-  - name: Hardening
+  - name: CSS
+    proficiency: 9.5
+  - name: ['Server','Administration']
     proficiency: 8.5
-  - name: UI/UX
-    proficiency: 7.5
+  - name: ['Data is','Beautiful']
+    proficiency: 9.0
   - name: Product Photography
     proficiency: 8.0
-  - name: ['Radar charts','(data visualizations)']
-    proficiency: 9.0
-  - name: Server Administration
-    proficiency: 8.5
+  - name: Graphic Design
+    proficiency: 8.0
+  - name: UI/UX
+    proficiency: 7.5
+  - name: JavaScript
+    proficiency: 7.0
+  - name: Copy-writing
+    proficiency: 5.5
 
 - label: Having Fun
   id : jff
   skills:
   - name: Ceramics
-    proficiency: 10
+    proficiency: 8
   - name: Cooking
-    proficiency: 10
+    proficiency: 8
   - name: CIV 5
-    proficiency: 10
+    proficiency: 8
   - name: Dad Jokes
     proficiency: 0
   - name: Drawing
-    proficiency: 10
-  - name: Don't Starve
-    proficiency: 10
+    proficiency: 8
+  - name: NPR
+    proficiency: 8
   - name: Plants
-    proficiency: 10
+    proficiency: 8
   - name: Kerble Space
-    proficiency: 10
+    proficiency: 8
   - name: Power Naps
-    proficiency: 10
+    proficiency: 8
   - name: Reading
-    proficiency: 10
+    proficiency: 8
   - name: Travel
-    proficiency: 10
+    proficiency: 8
   - name: Vinyl Records
-    proficiency: 10
+    proficiency: 8
 
-- label: Marketin'
+- label: Marketing
   id : marketing
   skills:
-  - name: FB Marketing
-    proficiency: 6.0
-  - name: Google Adwords
-    proficiency: 7.5
-  - name: Instagram
-    proficiency: 7.0
-  - name: Pinterest
-    proficiency: 6.6
   - name: SEO
     proficiency: 9.0
   - name: Tiktok
     proficiency: 8.0
+  - name: FB Marketing
+    proficiency: 6.0
+  - name: AB-Testing
+    proficiency: 7.5
+  - name: Google Adwords
+    proficiency: 7.5
+  - name: Analytics
+    proficiency: 7.5
+  - name: Instagram
+    proficiency: 7.0
+  - name: Pinterest
+    proficiency: 7.0
 
-- img : "/static/assets/img/landing/brain1.png"
-  top: 2em
+# - img : "/static/assets/img/landing/brain1.png"
+#   top: 6em
 
-- img : "/static/assets/img/landing/brain5.png"
-  top: 4em
+# - img : "/static/assets/img/landing/brain5.png"
+#   top: 6em
 
 - label: Software Engineering
   id : arch
@@ -123,9 +125,11 @@
     proficiency: 6.5
   - name: Home Improvement 
     proficiency: 4.0
+  - name: Import
+    proficiency: 6.0
   - name: Jewelry Design 
     proficiency: 8.5
-  - name: Lego Buildin'
+  - name: Lego Building
     proficiency: 8.5
   - name: Manufacturing
     proficiency: 6.0

@@ -11,11 +11,11 @@ permalink: pretty
 img_path: /static/assets/img/blog  # url should be '/homepage/static/assets/img/blog' as before
 
 navtitle: Nalin Singapuri
-h1title: "Howdy, I'm <span id=\"nalin\">NALIN</span>  <span id=\"singapuri\">SINGAPURI</span>, and yes, I'll build it for you"
-h2title: "websites &bull; applications &bull; products &bull; brands"
+h1title: "Howdy, I'm <span id=\"nalin\">NALIN</span>  <span id=\"singapuri\">SINGAPURI</span>, and <em>this</em> is my kick-ass website"
+h2title: "and yes, I can build you a kick-ass website too"
 # author -- index page "about me" section
 author:  # change following line to your infomation.
-  name: GitHub  # Be used at blog posts' author.
+  name: Nalin Singapuri  # Be used at blog posts' author.
   first_name: Nalin  # Be used at index page about me section.
   last_name: Singapuri  # Be used at index page about me section.
   avatar: /static/assets/img/landing/avatar.png  # upload your avatar at directory and edit it.
