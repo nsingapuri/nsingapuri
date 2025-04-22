@@ -32,11 +32,11 @@
                         </a>
                     {% endcapture %}
 
-                    <h3>Type: {{ project.type }} / {{ project.domain }}</h3>
-                    <h2 class="align-self-center" style="font-size: 162%; margin-top: 1em;">{{ project.headline | replace: project.name, projectLink }}</h2>
+                    <h4>Type: {{ project.type }} / {{ project.domain }}</h4>
+                    <h3>{{ project.headline | replace: project.name, projectLink }}</h3>
                 </div>
-                <h2 style="margin-top: 3em;">At a Glance</h2>
-                <div style="font-size: 16px;">
+                <h4 style="margin-top: 3em;">At a Glance</h4>
+                <div>
                     <p>
                         {% for role in project.ataglance %}
                             {{ role.heading }} <strong>{{ role.detail }}</strong><br/>
@@ -57,21 +57,15 @@
             {% endif %}
         </div>
 
-        <br style="clear: both; padding-bottom: 2em;"><br/>
+        <br style="clear: both;">
     {% endfor %}
 
     {% if moreCaseStudies %}
         </div>
         <div class="row align-middle" style="margin-top: 2em;">
-            <div class="col-sm-6 text-center">
-                <div style="font-size: 24px; text-align: center; margin: 0 auto;">
-                    Need more examples? Check out <a href="{{ '/casestudy/' | relative_url }}">my portfolio</a> here.
-                    <br style="clear: both; padding-bottom: 2em;"><br/>
-                </div>
-            </div>
-            <div class="col-sm-6 text-center">
-                <div style="font-size: 24px; text-align: center; margin: 0 auto;">
-                    <img src="{{ '/static/assets/img/landing/goodfit.png' | prepend: site.baseurl }}" class="img-fluid"/>
+            <div class="col-sm-12 text-center">
+                <div style="font-size: 20px; margin: 0 auto;">
+                    Need more examples? <br/>Check out <a href="{{ '/casestudy/' | relative_url }}">my portfolio</a> here.
                 </div>
             </div>
         </div>
